@@ -1,0 +1,88 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Volumes/2020/WORK/Target Call/דף נחיתה דרושים/desktop דף נחיתה_דרושים Folder/Document fonts/AdobeFnt22.lst
+FileLength:2276
+FileModTime:629416437
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PloniDL1.1AAA-Bold
+FamilyName:Ploni DL 1.1 AAA
+StyleName:Bold
+MenuName:Ploni DL 1.1 AAA
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Ploni DL 1.1 AAA Bold
+WritingScript:Roman
+OutlineFileName:/Volumes/2020/WORK/Target Call/דף נחיתה דרושים/desktop דף נחיתה_דרושים Folder/Document fonts/ploni-bold-aaa.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:144244
+FileModTime:560953884
+NameArray:0,Mac,4,Ploni DL 1.1 AAA Bold
+NameArray:0,Win,1,Ploni DL 1.1 AAA
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PloniDL1.1AAA-Regular
+FamilyName:Ploni DL 1.1 AAA
+StyleName:Regular
+MenuName:Ploni DL 1.1 AAA
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Ploni DL 1.1 AAA Regular
+WritingScript:Roman
+OutlineFileName:/Volumes/2020/WORK/Target Call/דף נחיתה דרושים/desktop דף נחיתה_דרושים Folder/Document fonts/ploni-regular-aaa.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:142656
+FileModTime:560953884
+NameArray:0,Mac,4,Ploni DL 1.1 AAA Regular
+NameArray:0,Win,1,Ploni DL 1.1 AAA
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PloniDL1.1AAA-U-Bold
+FamilyName:Ploni DL 1.1 AAA
+StyleName:UltraBold
+MenuName:Ploni DL 1.1 AAA U-Bold
+StyleBits:0
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Ploni DL 1.1 AAA UltraBold
+WritingScript:Roman
+OutlineFileName:/Volumes/2020/WORK/Target Call/דף נחיתה דרושים/desktop דף נחיתה_דרושים Folder/Document fonts/ploni-ultrabold-aaa.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:148776
+FileModTime:560953884
+NameArray:0,Mac,18,Ploni DL 1.1 AAA U-Bold
+NameArray:0,Mac,4,Ploni DL 1.1 AAA UltraBold
+NameArray:0,Win,1,Ploni DL 1.1 AAA U-Bold
+NameArray:0,Win,16,Ploni DL 1.1 AAA
+%EndFont
+

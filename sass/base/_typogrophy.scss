@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "adoveFnt22";
+  src: url("../fonts/ploni-regular-aaa.otf");
+}
+@font-face {
+  font-family: "adoveFnt22-bold";
+  src: url("../fonts/ploni-bold-aaa.otf");
+}
+@font-face {
+  font-family: "adoveFnt22-ultrabold";
+  src: url("../fonts/ploni-ultrabold-aaa.otf");
+}
+
+body {
+  font-family: "adoveFnt22", cursive;
+  font-weight: 400;
+  font-size: $defaut-font-size;
+  line-height: 1.7;
+}
+
+.blue-text {
+  color: $color-primary;
+}
+.orange-text {
+  color: $color-secondary;
+}
