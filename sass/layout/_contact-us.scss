@@ -1,0 +1,62 @@
+.contact-us {
+    &-section {
+        padding-inline: 5rem;
+        margin-block: 2rem;
+    }
+
+
+}
+
+.form {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    // flex-direction: column;
+    margin-top: 0rem;
+    // margin-inline-start: 8rem;
+    padding-inline: 5rem;
+    border: 1px solid red;
+
+    // @include respond(phone) {
+    //   width: 85vw;
+    //   margin-top: 3rem;
+    // }
+    // &-lottie {
+    //     position: absolute;
+    //     width: 34rem;
+    //     height: 25rem;
+    //     left: 2rem;
+    // }
+
+    &-input {
+        @include inputBasic;
+        width: 20%;
+        color: $color-primary-dark;
+        border-bottom: 1px solid;
+
+        &::placeholder {
+            color: black;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:hover::placeholder {
+            color: $color-primary-dark;
+        }
+    }
+
+    &-submit {
+        // @include global-btn(white, $color-primary-light, white);
+        @include submitBasic($color-primary-light);
+        @include shine($color-primary-light);
+        width: 20%;
+        text-align: center;
+
+        &:hover {
+            @include buttonHover;
+        }
+    }
+
+}

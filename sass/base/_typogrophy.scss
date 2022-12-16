@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "adoveFnt22";
+  src: url("../fonts/ploni-regular-aaa.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "adoveFnt22-bold";
+  src: url("../fonts/ploni-bold-aaa.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "adoveFnt22-ultrabold";
+  src: url("../fonts/ploni-ultrabold-aaa.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/FuturaLTW05-Book.woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "adoveFnt22", cursive;
+  font-weight: 400;
+  font-size: $defaut-font-size;
+  line-height: 1.7;
+}
+
+.blue-text {
+  color: $color-primary;
+}
+
+.orange-text {
+  color: $color-secondary;
+}
+
+.btn {
+  @include global-btn(white, $color-black, $color-white);
+  // border-radius: 20rem;
+}
+
+.whiteBackground {
+  @include backgroundColor($color-white);
+}
+
+.blueBackground {
+  @include backgroundColor($color-last-dark);
+  margin-bottom: 2rem;
+  margin: 0 1rem;
+
+  &-light {
+    margin: 0 1rem 0 0;
+
+    @include backgroundColor($color-last);
+  }
+
+  // @include respond(big-desktop) {
+  //   width: 8rem;
+  //   height: 8rem;
+  // }
+
+  // @include respond(tab-port) {
+  //   padding: 5rem 0;
+  // }
+}
+
+.orangeBackground {
+  @include backgroundColor($color-orange);
+}
+
+.redBackground {
+  @include backgroundColor($color-red);
+}
+
+.mainColor-Background {
+  background-color: $color-primary;
+  padding: 0 1rem;
+  width: fit-content;
+  overflow-y: hidden;
+}
+
+#grey {
+  background-color: $color-grey-light-1;
+}
+
+#blue {
+  background-color: $color-primary-dark;
+}
+
+.bld {
+  font-family: "adoveFnt22-bold";
+}
+
+
+.show-on-scroll {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.5s;
+  will-change: transform opacity;
+
+  &.is-visible {
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
