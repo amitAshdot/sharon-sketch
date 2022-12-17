@@ -56,6 +56,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -----END IS ON SCREEN-----
 
+
+    //------START LESSON-----
+    let lessons = $(".lesson").click(function (e) {
+        e.preventDefault();
+
+        toggleLesson(e);
+    });
+
+    const toggleLesson = (event) => {
+        debugger
+
+        let lesson = event.currentTarget;
+
+        if (lesson.classList.contains("show")) {
+            $(".lesson > .lesson-hidden").css('display', 'none');
+            $(".lesson > .lesson-hidden").css('visibility', 'hidden');
+            $(".lesson > .lesson-hidden").css('opacity', '0');
+            lesson.classList.remove("show");
+        } else {
+            $(".lesson > .lesson-hidden").css('display', 'block');
+            $(".lesson > .lesson-hidden").css('visibility', 'visible');
+            $(".lesson > .lesson-hidden").css('opacity', '1');
+            lesson.classList.add("show");
+        }
+
+    }
+
+
+
     // -----START EMAIL VALIDATION-----
     const isNumberKey = (evt) => {
         let charCode = (evt.which) ? evt.which : evt.keyCode

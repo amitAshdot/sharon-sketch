@@ -32,4 +32,26 @@
 
 
     }
+
+    &-cta {
+        display: flex;
+        justify-content: center;
+        margin-block: 2rem;
+        margin-inline: auto;
+        width: 10rem;
+
+        a {
+            background: $color-primary;
+            color: $color-white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.2s;
+
+            &:hover {
+                background: $color-primary-dark;
+            }
+        }
+    }
 }
