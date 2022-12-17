@@ -71,12 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let lessonHide = lesson.children[2];
         if (lesson.classList.contains("show")) {
             lessonHide.style.display = "none";
-            lessonHide.style.visibility = "hidden";
             lessonHide.style.opacity = "0";
             lesson.classList.remove("show");
         } else {
             lessonHide.style.display = "block";
-            lessonHide.style.visibility = "visible";
             lessonHide.style.opacity = "1";
             lesson.classList.add("show");
         }

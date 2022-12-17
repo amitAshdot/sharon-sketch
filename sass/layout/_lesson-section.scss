@@ -1,12 +1,15 @@
 .lessons {
     display: flex;
+    overflow: visible;
 
     &-section {
         margin-block: 2rem;
         padding-inline: 5rem;
+        overflow: visible;
         // position: relative;
         // display: flex;
         border: 1px solid green;
+
     }
 
     &__title {
@@ -17,9 +20,15 @@
 
 .lesson {
     padding: 3rem;
+    overflow: visible;
+
+    &>* {
+        overflow: visible;
+    }
 
     &-container {
         width: 33%;
+        overflow: visible;
     }
 
     &-top {
@@ -58,7 +67,7 @@
         width: 100vw;
         z-index: 5;
         display: none;
-        visibility: hidden;
+        // visibility: hidden;
         opacity: 0;
         transition: all 1s;
 
