@@ -68,16 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
         debugger
 
         let lesson = event.currentTarget;
-
+        let lessonHide = lesson.children[2];
         if (lesson.classList.contains("show")) {
-            $(".lesson > .lesson-hidden").css('display', 'none');
-            $(".lesson > .lesson-hidden").css('visibility', 'hidden');
-            $(".lesson > .lesson-hidden").css('opacity', '0');
+            lessonHide.style.display = "none";
+            lessonHide.style.visibility = "hidden";
+            lessonHide.style.opacity = "0";
             lesson.classList.remove("show");
         } else {
-            $(".lesson > .lesson-hidden").css('display', 'block');
-            $(".lesson > .lesson-hidden").css('visibility', 'visible');
-            $(".lesson > .lesson-hidden").css('opacity', '1');
+            lessonHide.style.display = "block";
+            lessonHide.style.visibility = "visible";
+            lessonHide.style.opacity = "1";
             lesson.classList.add("show");
         }
 
