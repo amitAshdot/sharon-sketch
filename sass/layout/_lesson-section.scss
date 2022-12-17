@@ -2,6 +2,10 @@
     display: flex;
     overflow: visible;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
     &-section {
         margin-block: 2rem;
         padding-inline: 5rem;
@@ -10,11 +14,21 @@
         // display: flex;
         border: 1px solid green;
 
+
+        @include respond(tab-port) {
+            padding-inline: 1rem;
+        }
     }
 
     &__title {
         font-size: 3rem;
         text-align: center;
+        overflow: hidden;
+
+        @include respond(tab-port) {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+        }
     }
 }
 
@@ -29,11 +43,21 @@
     &-container {
         width: 33%;
         overflow: visible;
+
+        @include respond(tab-port) {
+            width: 100%;
+            border: 1px solid;
+            text-align: center;
+        }
     }
 
     &-top {
         display: flex;
         justify-content: space-between;
+
+        @include respond(tab-port) {
+            justify-content: center;
+        }
 
         &-title {}
 
@@ -55,7 +79,12 @@
     }
 
     &-text {
-        &-short {}
+        &-short {
+            @include respond(tab-port) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
     }
 
     &-hidden {

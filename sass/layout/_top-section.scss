@@ -3,6 +3,11 @@
         // min-height: 100vh;
         position: relative;
         border: 1px solid red;
+
+
+        @include respond(tab-port) {
+            // min-height: 100vh;
+        }
     }
 
     &-img {
@@ -26,6 +31,30 @@
         background: #ffffff94;
         margin: 10rem 24rem;
         padding: 3rem;
+
+
+        @include respond(tab-port) {
+            margin: 1rem 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1.7rem;
+        }
+
+        & h1 {
+            overflow: hidden;
+        }
+
+        & a {
+            @include respond(tab-port) {
+                margin: 1rem 1rem;
+            }
+        }
+
+        img {
+            @include respond(tab-port) {
+                width: 100%;
+            }
+        }
     }
 
     &-section {}

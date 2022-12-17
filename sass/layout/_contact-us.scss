@@ -2,6 +2,12 @@
     &-section {
         padding-inline: 5rem;
         margin-block: 2rem;
+
+
+        @include respond(tab-port) {
+            padding-inline: 1rem;
+            margin-block: 1rem;
+        }
     }
 
 
@@ -16,6 +22,12 @@
     // margin-inline-start: 8rem;
     padding-inline: 5rem;
     border: 1px solid red;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        padding-inline: 1rem;
+        margin-block: 1rem;
+    }
 
     // @include respond(phone) {
     //   width: 85vw;
@@ -33,6 +45,10 @@
         width: 20%;
         color: $color-primary-dark;
         border-bottom: 1px solid;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &::placeholder {
             color: black;
@@ -53,6 +69,10 @@
         @include shine($color-primary-light);
         width: 20%;
         text-align: center;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:hover {
             @include buttonHover;

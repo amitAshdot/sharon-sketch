@@ -22,6 +22,12 @@
   padding: 0 2rem;
   font-size: 1.5rem;
 
+  @include respond(tab-port) {
+    font-size: 1rem;
+    padding: 0 1rem;
+    height: 2rem;
+  }
+
   // @include respond(phone) {
   //   height: 7rem;
   //   margin-bottom: 1rem;
@@ -50,11 +56,11 @@
 
   transition: all 0.5s;
 
-  // @include respond(phone) {
-  //   font-size: 3rem;
-  //   height: 7rem;
-  //   margin-top: 5rem;
-  // }
+  @include respond(tab-port) {
+    font-size: 1rem;
+    padding: 0 1rem;
+    height: 2rem;
+  }
 }
 
 @mixin buttonHover {
