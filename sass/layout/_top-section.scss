@@ -3,7 +3,7 @@
         // min-height: 100vh;
         position: relative;
         border: 1px solid red;
-
+        overflow: hidden;
 
         @include respond(tab-port) {
             // min-height: 100vh;

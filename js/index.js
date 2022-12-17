@@ -169,22 +169,24 @@ document.addEventListener("DOMContentLoaded", function () {
         centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                infinite: true
-            }
-        }, {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                dots: true
-            }
-        }, {
-            breakpoint: 300,
-            settings: "unslick" // destroys slick
-        }]
+        responsive: [
+            //     {
+            //     breakpoint: 1024,
+            //     settings: {
+            //         slidesToShow: 3,
+            //         infinite: true
+            //     }
+            // },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }, {
+                breakpoint: 300,
+                settings: "unslick" // destroys slick
+            }]
     });
 
     // -----END CAROUSEL-----

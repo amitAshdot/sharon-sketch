@@ -6,6 +6,7 @@
         display: flex;
 
         border: 1px solid blue;
+        overflow: hidden;
 
         @include respond(tab-port) {
             flex-direction: column;

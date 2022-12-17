@@ -501,7 +501,7 @@
   padding: 10rem 7rem 12rem;
   background-color: $color-black;
   color: $color-white;
-  overflow: auto;
+  // overflow: auto;
 
   @include respond(phone) {
     font-weight: bold;

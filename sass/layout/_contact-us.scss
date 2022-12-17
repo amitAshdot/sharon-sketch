@@ -2,7 +2,7 @@
     &-section {
         padding-inline: 5rem;
         margin-block: 2rem;
-
+        overflow: hidden;
 
         @include respond(tab-port) {
             padding-inline: 1rem;
