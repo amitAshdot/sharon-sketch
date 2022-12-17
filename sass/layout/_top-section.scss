@@ -45,6 +45,8 @@
         }
 
         & a {
+            overflow: hidden;
+
             @include respond(tab-port) {
                 margin: 1rem 1rem;
             }

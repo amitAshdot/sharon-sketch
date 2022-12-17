@@ -70,6 +70,7 @@
         margin-block: 2rem;
         margin-inline: auto;
         width: 10rem;
+        overflow: hidden;
 
         @include respond(tab-port) {
             margin-block: 1rem;
@@ -83,7 +84,7 @@
             text-decoration: none;
             font-size: 1.5rem;
             transition: all 0.2s;
-
+            overflow: hidden;
 
             &:hover {
                 background: $color-primary-dark;
