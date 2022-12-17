@@ -60,13 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //------START LESSON-----
     let lessons = $(".lesson").click(function (e) {
         e.preventDefault();
-
         toggleLesson(e);
     });
 
     const toggleLesson = (event) => {
-        debugger
-
         let lesson = event.currentTarget;
         let lessonHide = lesson.children[2];
         if (lesson.classList.contains("show")) {
@@ -78,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
             lessonHide.style.opacity = "1";
             lesson.classList.add("show");
         }
-
     }
 
 
