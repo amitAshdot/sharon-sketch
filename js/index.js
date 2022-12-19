@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             return false
         }
-    }, { passive: true });
+    });
     // -----END EMAIL SUBMIT-----
 
 
@@ -186,4 +186,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // -----END CAROUSEL-----
-}, { passive: true });
+});
