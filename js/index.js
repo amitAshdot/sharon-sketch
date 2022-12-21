@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             lesson.classList.add("show");
         }
     }
-
+    //------END LESSON-----
 
 
     // -----START EMAIL VALIDATION-----
@@ -206,7 +206,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition - 100;
         window.scrollTo({
-            top: offsetPosition,
+            top: elementPosition,
+            // top: offsetPosition,
             behavior: "smooth"
         });
     }
@@ -215,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("popup-btn").addEventListener("click", function (e) {
         e.preventDefault();
         let element = document.getElementById("form");
+        debugger
         scrollToElement(element);
         document.getElementById("popup").style.display = "none";
     }
