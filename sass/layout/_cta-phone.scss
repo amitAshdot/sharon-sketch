@@ -1,0 +1,67 @@
+//floating phone
+.callPhone {
+    position: relative;
+    display: flex;
+    height: 100%;
+    place-items: center;
+    text-decoration: none;
+    overflow: visible;
+    // padding-block: 1.1rem;
+
+    &-fixed {
+        display: none;
+        font-size: 1vw;
+        position: fixed;
+        top: 80vh;
+        left: 10px;
+        width: 25vw;
+        max-width: 12rem;
+        height: auto;
+        padding-block: 1rem;
+        border: 0px;
+        background: #333;
+        border-radius: 15px;
+        z-index: 999999;
+        overflow: visible;
+
+        @include respond(mini-desktop) {
+            display: block;
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        border-radius: 100%;
+        background: $color-primary;
+        width: 5rem;
+        height: 5rem;
+        transform: translate(40%, -50%);
+        filter: drop-shadow(-5px 0px 0px white);
+        overflow: visible;
+    }
+
+    &-img {
+        position: absolute;
+        right: 11%;
+        top: 50%;
+        transform: translateY(-50%) rotate(255deg);
+        filter: invert(1);
+        width: 70%;
+        overflow: visible;
+    }
+
+    &>p {
+        font-family: 'simpler', sans-serif;
+        line-height: 2.5rem;
+        width: 60%;
+        margin-right: auto;
+        font-size: 2.5rem;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: visible;
+    }
+
+}

@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             return false
         }
-    });
+    }, { passive: true });
     // -----END EMAIL SUBMIT-----
 
 
@@ -186,4 +186,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // -----END CAROUSEL-----
-});
+
+    // -----START SCROLL TO TOP-----
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 8);
+        }
+    }
+    // document.getElementById("scrollToTop").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     scrollToTop();
+    // });
+    // -----END SCROLL TO TOP-----
+
+    // -----START SCROLL TO ELEMENT-----
+    const scrollToElement = (element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - 100;
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+    // -----END SCROLL TO ELEMENT-----
+
+    document.getElementById("popup-btn").addEventListener("click", function (e) {
+        e.preventDefault();
+        let element = document.getElementById("form");
+        scrollToElement(element);
+        document.getElementById("popup").style.display = "none";
+    }
+    );
+
+    // ----- CLOSING POPUP -----
+    document.getElementById("popup-exit").addEventListener("click", function (e) {
+        e.preventDefault();
+        document.getElementById("popup").style.display = "none";
+    });
+    // ----- CLOSING POPUP -----
+
+    // ----- START SHOWING POPUP -----
+    setTimeout(() => {
+        document.getElementById("popup").style.display = "block";
+
+    }, 5000)
+    // ----- END SHOWING POPUP -----
+
+}, { passive: true });
