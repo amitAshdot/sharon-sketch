@@ -27,6 +27,7 @@
         @include respond(mini-desktop) {
             flex-direction: column;
             height: 70%;
+            width: 90%;
             padding: 1rem;
         }
 
