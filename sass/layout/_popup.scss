@@ -15,12 +15,50 @@
         transform: translate(-50%, -50%);
         width: 80%;
         // max-width: 500px;
-        height: 80%;
+        height: 60%;
         background-color: $color-white;
         padding: 2rem;
         border-radius: 1rem;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-        z-index: 100;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+            height: 70%;
+            padding: 1rem;
+        }
+
+    }
+
+    &-exit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2rem;
+        height: 2rem;
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 2rem;
+        border-radius: 0 0 0 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        overflow: hidden;
+
+        @include respond(mini-desktop) {
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+        &:hover {
+            background-color: $color-primary-dark;
+        }
     }
 
     &-title {
@@ -28,6 +66,21 @@
         font-weight: 700;
         text-align: center;
         margin-bottom: 2rem;
+
+        @include respond(mini-desktop) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 5rem;
+            height: 0.5rem;
+            background-color: $color-primary;
+            margin: 1rem auto;
+        }
     }
 
     &-text {
@@ -35,6 +88,11 @@
         font-weight: 400;
         text-align: center;
         margin-bottom: 2rem;
+
+        @include respond(mini-desktop) {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
     }
 
     &-btn {
@@ -52,9 +110,24 @@
         border-radius: 1rem;
         cursor: pointer;
         transition: all 0.3s;
+        overflow: hidden;
+
+        @include respond(mini-desktop) {
+            width: 8rem;
+            height: 3rem;
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
 
         &:hover {
             background-color: $color-primary-dark;
         }
+    }
+
+    &-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.5rem;
     }
 }
