@@ -203,26 +203,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -----START SCROLL TO ELEMENT-----
     const scrollToElement = (element) => {
-        const elementPosition = element.getBoundingClientRect().top;
+        const elementDetails = element.getBoundingClientRect();
+        const elementPosition = elementDetails.top;
         const offsetPosition = elementPosition - 100;
+        let t = window.pageYOffset
+        debugger
+
         window.scrollTo({
-            top: elementPosition,
+            // top: elementPosition,
+            top: 5000,
             // top: offsetPosition,
             behavior: "smooth"
         });
     }
     // -----END SCROLL TO ELEMENT-----
-
     document.getElementById("popup-btn").addEventListener("click", function (e) {
         e.preventDefault();
         let element = document.getElementById("form");
-        debugger
         scrollToElement(element);
         document.getElementById("popup").style.display = "none";
     }
     );
-
     // ----- CLOSING POPUP -----
+
     document.getElementById("popup-exit").addEventListener("click", function (e) {
         e.preventDefault();
         document.getElementById("popup").style.display = "none";

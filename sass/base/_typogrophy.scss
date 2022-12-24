@@ -38,7 +38,7 @@ body {
 }
 
 .btn {
-  @include global-btn(white, $color-black, $color-white);
+  @include global-btn($color-white, $color-primary, $color-white);
   // border-radius: 20rem;
 }
 
