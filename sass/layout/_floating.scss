@@ -1,0 +1,24 @@
+.floating {
+    position: absolute;
+
+    &.circle {
+        width: 5rem;
+        height: 5rem;
+        background: $color-secondary;
+        border-radius: 50%;
+        bottom: -1rem;
+        right: -1rem;
+        overflow: visible;
+
+        & .circle-border {
+            &-left {
+                border: 1px solid;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                margin: 0 1rem;
+
+            }
+        }
+    }
+}
