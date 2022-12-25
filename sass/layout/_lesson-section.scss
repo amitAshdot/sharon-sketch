@@ -1,13 +1,16 @@
 .lessons {
     display: flex;
-    // overflow: visible;
-    overflow: hidden;
+    overflow: visible;
+    // overflow: hidden;
+    gap: 1rem;
 
     @include respond(tab-port) {
         flex-direction: column;
+        gap: 3rem;
     }
 
     &-section {
+        overflow: visible;
         margin-block: 2rem;
         padding-inline: 5rem;
         // overflow: visible;
@@ -35,28 +38,43 @@
 
 .lesson {
     padding: 3rem;
-
-    // overflow: visible;
-
+    overflow: visible;
+    background: $color-last;
+    z-index: -1;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 
     &>* {
         // overflow: visible;
     }
 
+    &.left {
+        left: -1rem;
+    }
+
     &-container {
+        position: relative;
+        bottom: 0;
         width: 33%;
-        overflow: hidden;
+        border: 1px solid;
+        min-height: 12rem;
+        overflow: visible;
 
         @include respond(tab-port) {
-            width: 100%;
+            width: 90%;
             border: 1px solid;
             text-align: center;
+            margin: auto;
         }
     }
 
     &-top {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         @include respond(tab-port) {
             justify-content: center;
@@ -82,6 +100,8 @@
     }
 
     &-text {
+        text-align: center;
+
         &-short {
             @include respond(tab-port) {
                 font-size: 1rem;
