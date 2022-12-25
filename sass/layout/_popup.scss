@@ -27,9 +27,9 @@
 
         @include respond(mini-desktop) {
             flex-direction: column;
-            height: 70%;
+            height: auto;
             width: 90%;
-            padding: 1rem;
+            padding: 2rem 1rem;
         }
 
     }
@@ -72,7 +72,7 @@
         @include respond(mini-desktop) {
             font-size: 1.5rem;
             line-height: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
         }
 
         &::after {
