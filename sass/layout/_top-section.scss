@@ -17,11 +17,7 @@
         left: 0;
         object-fit: cover;
         width: 100vw;
-        // height: auto;
-        // filter: contrast(.6);
-        // filter: grayscale(0.8);
-        height: fit-content;
-        height: -webkit-fill-available;
+        height: 100%;
         z-index: -1;
     }
 
@@ -48,7 +44,7 @@
             overflow: hidden;
 
             @include respond(tab-port) {
-                margin: 1rem 1rem;
+                margin: 1rem 1rem 0;
             }
         }
 
@@ -58,7 +54,7 @@
             height: auto;
 
             @include respond(tab-port) {
-                width: 100%;
+                width: 80%;
             }
         }
     }
