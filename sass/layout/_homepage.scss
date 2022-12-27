@@ -12,7 +12,7 @@
   animation: backwards 0.5s moveOutHeader;
 
   @include respond(tab-port) {
-    height: 5rem;
+    height: $header-height-mobile;
   }
 
   &.sticky {
