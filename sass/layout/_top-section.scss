@@ -4,6 +4,7 @@
         position: relative;
         border: 1px solid red;
         overflow: hidden;
+        margin-block-start: $header-height;
 
         @include respond(tab-port) {
             // min-height: 100vh;
