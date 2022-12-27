@@ -59,22 +59,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //------START LESSON-----
-    let lessons = $(".lesson").click(function (e) {
+    $(".lesson").click(function (e) {
         e.preventDefault();
-        toggleLesson(e);
+        showLesson(e);
     });
-
-    const toggleLesson = (event) => {
+    $(".lesson-hidden").click(function (e) {
+        e.preventDefault();
+        hideLesson(e);
+    });
+    const showLesson = (event) => {
         let lesson = event.currentTarget;
-        let lessonHide = lesson.children[2];
-        if (lesson.classList.contains("show")) {
-            lessonHide.style.display = "none";
-            lessonHide.style.opacity = "0";
-            lesson.classList.remove("show");
-        } else {
-            lessonHide.style.display = "block";
-            lessonHide.style.opacity = "1";
-            lesson.classList.add("show");
+        let lessonId = lesson.id;
+        let lessonHide = document.getElementById(`${lessonId}-hidden`);
+        lessonHide.style.display = "block";
+        lessonHide.style.opacity = "1";
+        lesson.classList.add("show");
+        // let lessonHide = lesson.children[2];
+        // if (lesson.classList.contains("show")) {
+        //     lessonHide.style.display = "none";
+        //     lessonHide.style.opacity = "0";
+        //     lesson.classList.remove("show");
+        // } else {
+        //     lessonHide.style.display = "block";
+        //     lessonHide.style.opacity = "1";
+        //     lesson.classList.add("show");
+        // }
+    }
+
+    const hideLesson = (event) => {
+        let lesson = document.getElementsByClassName("lesson");
+        let lessonHide = document.getElementsByClassName("lesson-hidden");
+        for (let i = 0; i < lesson.length; i++) {
+            lesson[i].classList.remove("show");
+            lessonHide[i].style.display = "none";
+            lessonHide[i].style.opacity = "0";
         }
     }
     //------END LESSON-----

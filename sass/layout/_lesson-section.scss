@@ -40,13 +40,13 @@
     padding: 3rem;
     overflow: visible;
     background: $color-last;
-    z-index: 1;
     position: absolute;
     bottom: -1.5rem;
     left: 1rem;
     width: 100%;
     height: 100%;
     margin: auto;
+    z-index: 5;
 
     &>* {
         // overflow: visible;
@@ -56,13 +56,13 @@
         left: -1rem;
     }
 
-    &#\31 {}
+    &#first {}
 
-    &#\32 {
+    &#second {
         background: $color-secondary;
     }
 
-    &#\33 {
+    &#third {
         background: $color-primary;
     }
 
@@ -153,6 +153,24 @@
                 flex-direction: column;
                 padding: 1.5rem;
                 height: 70%;
+            }
+        }
+
+        &#first {
+            &-hidden {
+                z-index: 10;
+            }
+        }
+
+        &#second {
+            &-hidden {
+                z-index: 10;
+            }
+        }
+
+        &#third {
+            &-hidden {
+                z-index: 10;
             }
         }
 

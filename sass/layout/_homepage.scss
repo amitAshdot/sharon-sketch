@@ -20,7 +20,7 @@
     top: 0;
     width: 100%;
     background: $color-white;
-    z-index: 10;
+    z-index: 15;
     box-shadow: 0px 5px 30px 0px #727272;
 
     animation: forwards 0.5s moveInHeader;
@@ -29,6 +29,11 @@
   &-logo {
     padding-block: 1rem;
     overflow: hidden;
+
+
+    @include respond(tab-port) {
+      width: 6rem;
+    }
 
     &-img {
       width: 100%;
