@@ -1,791 +1,769 @@
 .header {
   display: flex;
-  justify-content: flex-end;
-
-  // @include respond(phone) {
-  //   justify-content: center;
-  // }
-
-  .logo {
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem 0 0 1rem;
-    object-fit: cover;
-    padding: 0;
-    animation: moveInRight 0.8s;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    border-radius: 50%;
-
-    // @include respond(phone) {
-    //   height: 11rem;
-    //   padding: 0rem 7rem;
-    // }
-    animation: moveInRight 0.8s;
-
-    @include respond(big-desktop) {
-      width: 8rem;
-      height: 8rem;
-    }
-
-    @include respond(tab-port) {
-      width: 3rem;
-      height: 3rem;
-      right: 1rem;
-    }
-  }
-}
-
-.main-text {
-  font-family: "adoveFnt22-bold";
-  position: relative;
-  padding: 20rem 0;
-
-  background-image: linear-gradient(to bottom, rgba(18, 42, 66, 0.5), rgba(18, 42, 66, 0.8)),
-    url(../images/sharon-red2.webp);
-  background-size: 100vw;
-  background-position: center;
-
-
-
-  @include respond(big-desktop) {
-    width: 8rem;
-    height: 8rem;
-  }
+  height: 6rem;
+  justify-content: center;
+  padding-block: 0rem;
 
   @include respond(tab-port) {
-    padding: 5rem 0;
-  }
-
-}
-
-.main-image {
-  font-family: "adoveFnt22-bold";
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  object-fit: cover;
-  overflow-y: hidden;
-  font-size: 5rem;
-
-  // @include respond(mini-desktop) {
-  //   font-size: 4rem;
-  // }
-
-  // @include respond(tab-port) {
-  //   font-size: 3.2rem;
-  // }
-
-  &__top-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    white-space: nowrap;
-    // padding: 10rem 0 0;
-
-    animation: fadeIn 1.5s;
-
-    @include respond(big-desktop) {
-      font-size: 3rem;
-      bottom: 23%;
-    }
-
-    @include respond(tab-port) {
-      line-height: 1rem;
-      font-size: 1rem;
-    }
-
-    &-right {
-      color: $color-last;
-    }
-
-    &-left {
-      color: white;
-    }
-  }
-
-  &__bottom-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    line-height: 4.5rem;
-    color: $color-last-dark;
-    // padding: 0rem 0 10rem;
-
-    animation: fadeIn 1.5s;
-
-    @include respond(big-desktop) {
-      font-size: 3rem;
-      bottom: 23%;
-    }
-
-    @include respond(tab-port) {
-      line-height: 2.5rem;
-      font-size: 0.7rem;
-    }
-
-    &-right {
-      color: white;
-      overflow: hidden;
-    }
-
-    &-left {
-      overflow: hidden;
-    }
-  }
-}
-
-.location-section {
-  position: relative;
-  padding: 12rem 2rem;
-  text-align: center;
-  overflow: hidden;
-
-
-  @include respond(tab-port) {
-    padding: 12rem 2rem 4rem;
-  }
-
-  &-lottie {
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    width: 40rem !important;
-    height: 40rem !important;
-
-    @include respond(big-desktop) {
-      width: 40rem !important;
-      height: 40rem !important;
-    }
-
-    @include respond(tab-port) {
-      width: 19rem !important;
-      height: 18rem !important;
-    }
-  }
-
-  &__text {
-    font-size: 3rem;
-    line-height: 6rem;
-    overflow: hidden;
-    padding-inline-end: 35rem;
-
-    @include respond(big-desktop) {
-      width: 40rem !important;
-      height: 40rem !important;
-    }
-
-    @include respond(tab-port) {
-      padding-inline-end: 0;
-
-    }
-
-
-
-
-    @include respond(phone-small) {
-      font-size: 2.5rem;
-    }
-
-    &-wider {
-      font-size: 3.5rem;
-    }
-  }
-
-  &__title {
-    font-family: "adoveFnt22-ultrabold";
-    display: flex;
-    margin-inline-end: auto;
-    width: fit-content;
-    line-height: 6rem;
-    overflow: hidden;
-    padding-inline-end: 15rem;
-    transition: all 0.2s;
-
-    // @include respond(big-desktop) {
-    //   width: 40rem !important;
-    //   height: 40rem !important;
-    // }
-
-    @include respond(tab-port) {
-      padding-inline-end: 0;
-      line-height: 1.5rem;
-      flex-direction: column;
-
-    }
-
-    &:hover {
-      transform: scale(1.03);
-    }
-
-    & {
-      opacity: 0;
-      transform: translateY(50%);
-      transition: all 0.5s;
-      will-change: transform opacity;
-    }
-
-    &.is-visible {
-      overflow: hidden;
-      opacity: 1;
-      transform: translateY(0%);
-    }
-
-    & h2 {
-      font-size: 4rem;
-      font-weight: 900;
-      margin: 0 1rem;
-      overflow: hidden;
-
-      &.color-blue {
-        color: $color-last;
-        font-size: 4rem;
-
-        @include respond(tab-port) {
-          font-size: 2.5rem;
-          line-height: 3rem;
-          width: 100%;
-        }
-      }
-
-      &.color-red {
-        // color: $color-primary-dark;
-        font-size: 4rem;
-
-        @include respond(tab-port) {
-          font-size: 2.5rem;
-          line-height: 3rem;
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  & p {
-    overflow: hidden;
-    line-height: 5rem;
-
-    @include respond(tab-port) {
-      line-height: 2.5rem;
-      font-size: 1.7rem;
-    }
-  }
-}
-
-
-.section-about {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  // margin-top: -20rem;
-
-  & h2 {
-    margin-bottom: 2rem;
-  }
-
-  @include respond(tab-port) {
-    padding: 22rem 0 18rem 0;
-  }
-}
-
-.contact-us-section {
-  font-family: "adoveFnt22-bold";
-  position: relative;
-
-  &#blue {
-    padding: 3rem 0 3rem;
-
-    // @include respond(phone) {
-    //   padding: 8rem 0;
-
-    //   &#grey {
-    //     padding: 8rem 0;
-    //   }
-    // }
-  }
-
-
-  & p {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-
-    // @include respond(phone) {
-    //   font-size: 3.5rem;
-    //   margin-bottom: 2rem;
-    // }
-
-    // @include respond(phone-small) {
-    //   font-size: 3rem;
-    // }
-  }
-
-  &-title {
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-
-    &-head {
-      font-family: "adoveFnt22";
-      display: flex;
-      flex-direction: column;
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
-      width: fit-content;
-      max-width: 112rem;
-      margin-left: 15rem;
-      margin-right: auto;
-      margin-bottom: -9rem;
-      position: absolute;
-      left: 50%;
-      transform: translate(-80%, 10%);
-
-      // @include respond(big-desktop) {
-      //   margin-left: 0rem;
-      // }
-
-      // @include respond(small-desktop) {
-      //   font-size: 5.8rem;
-      //   line-height: 7rem;
-      //   overflow: hidden;
-      // }
-
-      // @include respond(tab-land) {
-      //   position: inherit;
-      //   font-size: 5rem;
-      //   line-height: 6rem;
-      //   overflow: hidden;
-      // }
-
-      // @include respond(tab-port) {
-      //   font-size: 3.5rem;
-      //   line-height: 5rem;
-      //   padding: 0 3rem;
-      //   overflow: hidden;
-      //   text-align: center;
-      //   // margin: auto;
-      //   width: 100%;
-      //   left: 0%;
-      //   transform: translate(0%, 10%);
-      // }
-
-      // @include respond(phone-small) {
-      //   font-size: 2.5rem;
-      //   line-height: 4rem;
-      //   width: 100%;
-      // }
-
-      & span {
-        overflow: hidden;
-        font-family: "adoveFnt22-bold";
-        font-size: 7rem;
-
-        // @include respond(tab-port) {
-        //   font-size: 4.5rem;
-        // }
-      }
-    }
-  }
-}
-
-
-.about-setion {
-  padding: 10rem 7rem;
-
-  @include respond(phone) {
-    padding: 5rem 0rem;
-  }
-
-  &__info {
-    margin: auto;
-    font-size: 4.5rem;
-    min-width: 90rem;
-    max-width: 122rem;
-
-    & {
-      transform: translateY(40%);
-      opacity: 0;
-      transition: all 0.5s;
-      will-change: transform opacity;
-    }
-
-    &.is-visible {
-      overflow: hidden;
-      transform: translateY(0%);
-      opacity: 1;
-    }
-
-    @include respond(mini-desktop) {
-      min-width: 0;
-      max-width: 95vw;
-    }
-
-    @include respond(phone) {
-      text-align: center;
-      font-size: 2.5rem;
-      min-width: 0;
-      max-width: 97vw;
-    }
-
-    &:first-child {
-      margin-bottom: 7rem;
-
-      @include respond(tab-port) {
-        margin-bottom: 0rem;
-      }
-    }
-
-    &:hover &-title {
-      background-position: 0 -100%;
-    }
-
-    &-title {
-      font-family: "adoveFnt22-bold";
-
-      font-size: 5rem;
-      position: relative;
-      display: inline-block;
-      color: $color-primary-dark;
-      background: linear-gradient(to right,
-          $color-primary-dark,
-          $color-primary-dark 50%,
-          black 50%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      background-position: -100%;
-      overflow: hidden;
-      transition: background-position 275ms ease;
-      text-decoration: none; // text decorations are clipped in WebKit browsers
-
-      @include respond(phone) {
-        font-size: 3.4rem;
-        letter-spacing: -0.1rem;
-      }
-    }
-
-    &-text {
-      width: 100%;
-
-      @include respond(phone) {
-        font-size: 2.5rem;
-        line-height: 4rem;
-        overflow: hidden;
-        padding: 0rem 3rem;
-      }
-
-      & span.bold {
-        font-family: "adoveFnt22-bold";
-        padding: 0;
-      }
-
-      &-newlineOnMobile {
-        @include respond(phone) {
-          &::before {
-            content: "\A";
-            white-space: pre-line;
-          }
-        }
-      }
-    }
-  }
-}
-
-.pros-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem 7rem 12rem;
-  background-color: $color-black;
-  color: $color-white;
-  // overflow: auto;
-
-  @include respond(phone) {
-    font-weight: bold;
-    background-color: $color-grey-light-1;
-    color: $color-black;
-    padding: 6rem 1rem;
-  }
-
-  &-title {
-    font-family: "adoveFnt22-bold";
-    color: $color-primary;
-    font-size: 9rem;
-    margin-bottom: 4rem;
-
-    & {
-      transform: translateY(10%);
-      opacity: 0;
-      transition: all 0.5s;
-      will-change: transform opacity;
-    }
-
-    &.is-visible {
-      overflow: hidden;
-      transform: translateY(0%);
-      opacity: 1;
-    }
-
-    @include respond(small-desktop) {
-      font-size: 7rem;
-    }
-
-    @include respond(tab-land) {
-      font-size: 7rem;
-    }
-
-    @include respond(mini-desktop) {
-      font-size: 7rem;
-    }
-
-    @include respond(tab-port) {
-      font-size: 5rem;
-    }
-
-    @include respond(phone) {
-      font-size: 3rem;
-      align-self: center;
-      text-align: center;
-    }
-
-    &-span {
-      opacity: 0;
-      transition: all 0.5s;
-      transition-delay: 0.5s;
-      will-change: transform opacity;
-
-      &.is-visible {
-        overflow: hidden;
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
-  }
-
-  &-list {
-    display: flex;
-    flex-direction: column;
-
-    @include respond(phone) {
-      display: flex;
-      flex-direction: column;
-      padding: 0 1rem;
-    }
-
-    &__item {
-      display: flex;
-      align-items: center;
-      position: relative;
-      margin: 1rem 0;
-      float: left;
-      text-align: center;
-      align-items: start;
-
-      font-size: 4.5rem;
-
-      @include respond(small-desktop) {
-        font-size: 3.5rem;
-      }
-
-      @include respond(tab-land) {
-        font-size: 3rem;
-      }
-
-      @include respond(mini-desktop) {
-        font-size: 3.5rem;
-      }
-
-      @include respond(tab-port) {
-        font-size: 2.5rem;
-      }
-
-      @include respond(phone) {
-        margin: 0;
-        flex-direction: column-reverse;
-        font-size: 2.6rem;
-        align-items: center;
-
-        &:last-child &-smile-outer {
-          display: none;
-        }
-      }
-
-      &:hover &-smile-inner {
-        color: $color-primary;
-      }
-
-      &:hover &-smile-outer {
-        transform: rotate(-25deg);
-      }
-
-      &-smile-outer {
-        position: relative;
-        width: 6rem;
-        height: 3rem;
-        overflow: hidden;
-        background-color: black;
-        margin-left: 5rem;
-        margin-top: 2.4%;
-
-        transition: all 0.2s;
-
-        @include respond(mini-desktop) {
-          width: 4rem;
-          height: 2rem;
-        }
-
-        @include respond(phone) {
-          width: 4rem;
-          height: 2rem;
-
-          margin: 3rem 0;
-          background-color: $color-grey-light-1;
-          color: $color-primary;
-        }
-      }
-
-      &-smile-inner {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-        box-sizing: border-box;
-        border: 10px solid;
-        transition: all 0.2s;
-
-        @include respond(mini-desktop) {
-          width: 4rem;
-          height: 4rem;
-          border: 6px solid;
-        }
-
-        @include respond(phone) {
-          width: 4rem;
-          height: 4rem;
-        }
-      }
-
-      &-flex {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-
-        @include respond(phone) {
-          text-align: center;
-        }
-      }
-
-      &-mobile-flex {
-        @include respond(phone) {
-          display: flex;
-          flex-direction: column;
-        }
-      }
-
-      &-span {
-        width: 100%;
-      }
-    }
-  }
-}
-
-.footer {
-  width: 100%;
-  margin-top: -10px;
-  margin-right: auto;
-  margin-bottom: 6rem;
-
-  @include respond(tab-port) {
-    width: 100vw;
-    margin-top: -2rem;
-    margin-bottom: 0rem;
-    display: flex;
-    place-content: space-between;
-  }
-
-  &__right {
-    width: 50%;
-    align-self: center;
-
-    @include respond(tab-port) {
-      width: 25%;
-    }
-
-    @include respond(tab-port) {
-      width: 40%;
-    }
-  }
-
-  &__left {
-    width: 60%;
-    height: 20rem;
-    margin-right: auto;
-    position: relative;
-
-    @include respond(mini-desktop) {
-      padding: 0 0rem 0rem 10rem;
-    }
-
-    @include respond(tab-port) {
-      display: flex;
-      align-self: center;
-      justify-self: center;
-    }
+    height: 5rem;
   }
 
   &-logo {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-30%, 0px);
-
-    @include respond(mini-desktop) {
-      left: 40%;
-    }
-
-    @include respond(tab-port) {
-      width: 80%;
-      align-self: center;
-      justify-self: center;
-      transform: translate(-30%, 0px);
-    }
-
-    @include respond(phone) {
-      bottom: 0%;
-      transform: translate(-30%, -60%);
-    }
-  }
-
-  .smiley {
-    @include respond(tab-port) {
-      display: block;
-      width: 100%;
-    }
-
-    @include respond(phone) {
-      display: block;
-      width: 100%;
-    }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-block: 1rem;
   }
 }
 
-.desktop {
-  display: block;
+// .main-text {
+//   font-family: "adoveFnt22-bold";
+//   position: relative;
+//   padding: 20rem 0;
 
-  @include respond(tab-port) {
-    display: none;
-  }
-}
+//   background-image: linear-gradient(to bottom, rgba(18, 42, 66, 0.5), rgba(18, 42, 66, 0.8)),
+//     url(../images/sharon-red2.webp);
+//   background-size: 100vw;
+//   background-position: center;
 
-.mobile {
-  display: none;
 
-  @include respond(tab-port) {
-    display: block;
-  }
-}
+
+//   @include respond(big-desktop) {
+//     width: 8rem;
+//     height: 8rem;
+//   }
+
+//   @include respond(tab-port) {
+//     padding: 5rem 0;
+//   }
+
+// }
+
+// .main-image {
+//   font-family: "adoveFnt22-bold";
+//   position: relative;
+//   width: 100%;
+//   height: 60vh;
+//   object-fit: cover;
+//   overflow-y: hidden;
+//   font-size: 5rem;
+
+//   // @include respond(mini-desktop) {
+//   //   font-size: 4rem;
+//   // }
+
+//   // @include respond(tab-port) {
+//   //   font-size: 3.2rem;
+//   // }
+
+//   &__top-text {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 3rem;
+//     white-space: nowrap;
+//     // padding: 10rem 0 0;
+
+//     animation: fadeIn 1.5s;
+
+//     @include respond(big-desktop) {
+//       font-size: 3rem;
+//       bottom: 23%;
+//     }
+
+//     @include respond(tab-port) {
+//       line-height: 1rem;
+//       font-size: 1rem;
+//     }
+
+//     &-right {
+//       color: $color-last;
+//     }
+
+//     &-left {
+//       color: white;
+//     }
+//   }
+
+//   &__bottom-text {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 3rem;
+//     line-height: 4.5rem;
+//     color: $color-last-dark;
+//     // padding: 0rem 0 10rem;
+
+//     animation: fadeIn 1.5s;
+
+//     @include respond(big-desktop) {
+//       font-size: 3rem;
+//       bottom: 23%;
+//     }
+
+//     @include respond(tab-port) {
+//       line-height: 2.5rem;
+//       font-size: 0.7rem;
+//     }
+
+//     &-right {
+//       color: white;
+//       overflow: hidden;
+//     }
+
+//     &-left {
+//       overflow: hidden;
+//     }
+//   }
+// }
+
+// .location-section {
+//   position: relative;
+//   padding: 12rem 2rem;
+//   text-align: center;
+//   overflow: hidden;
+
+
+//   @include respond(tab-port) {
+//     padding: 12rem 2rem 4rem;
+//   }
+
+//   &-lottie {
+//     position: absolute;
+//     top: 0;
+//     left: 2rem;
+//     width: 40rem !important;
+//     height: 40rem !important;
+
+//     @include respond(big-desktop) {
+//       width: 40rem !important;
+//       height: 40rem !important;
+//     }
+
+//     @include respond(tab-port) {
+//       width: 19rem !important;
+//       height: 18rem !important;
+//     }
+//   }
+
+//   &__text {
+//     font-size: 3rem;
+//     line-height: 6rem;
+//     overflow: hidden;
+//     padding-inline-end: 35rem;
+
+//     @include respond(big-desktop) {
+//       width: 40rem !important;
+//       height: 40rem !important;
+//     }
+
+//     @include respond(tab-port) {
+//       padding-inline-end: 0;
+
+//     }
+
+
+
+
+//     @include respond(phone-small) {
+//       font-size: 2.5rem;
+//     }
+
+//     &-wider {
+//       font-size: 3.5rem;
+//     }
+//   }
+
+//   &__title {
+//     font-family: "adoveFnt22-ultrabold";
+//     display: flex;
+//     margin-inline-end: auto;
+//     width: fit-content;
+//     line-height: 6rem;
+//     overflow: hidden;
+//     padding-inline-end: 15rem;
+//     transition: all 0.2s;
+
+//     // @include respond(big-desktop) {
+//     //   width: 40rem !important;
+//     //   height: 40rem !important;
+//     // }
+
+//     @include respond(tab-port) {
+//       padding-inline-end: 0;
+//       line-height: 1.5rem;
+//       flex-direction: column;
+
+//     }
+
+//     &:hover {
+//       transform: scale(1.03);
+//     }
+
+//     & {
+//       opacity: 0;
+//       transform: translateY(50%);
+//       transition: all 0.5s;
+//       will-change: transform opacity;
+//     }
+
+//     &.is-visible {
+//       overflow: hidden;
+//       opacity: 1;
+//       transform: translateY(0%);
+//     }
+
+//     & h2 {
+//       font-size: 4rem;
+//       font-weight: 900;
+//       margin: 0 1rem;
+//       overflow: hidden;
+
+//       &.color-blue {
+//         color: $color-last;
+//         font-size: 4rem;
+
+//         @include respond(tab-port) {
+//           font-size: 2.5rem;
+//           line-height: 3rem;
+//           width: 100%;
+//         }
+//       }
+
+//       &.color-red {
+//         // color: $color-primary-dark;
+//         font-size: 4rem;
+
+//         @include respond(tab-port) {
+//           font-size: 2.5rem;
+//           line-height: 3rem;
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+
+//   & p {
+//     overflow: hidden;
+//     line-height: 5rem;
+
+//     @include respond(tab-port) {
+//       line-height: 2.5rem;
+//       font-size: 1.7rem;
+//     }
+//   }
+// }
+
+
+// .section-about {
+//   background-color: $color-grey-light-1;
+//   padding: 25rem 0;
+//   // margin-top: -20rem;
+
+//   & h2 {
+//     margin-bottom: 2rem;
+//   }
+
+//   @include respond(tab-port) {
+//     padding: 22rem 0 18rem 0;
+//   }
+// }
+
+// .contact-us-section {
+//   font-family: "adoveFnt22-bold";
+//   position: relative;
+
+//   &#blue {
+//     padding: 3rem 0 3rem;
+
+//     // @include respond(phone) {
+//     //   padding: 8rem 0;
+
+//     //   &#grey {
+//     //     padding: 8rem 0;
+//     //   }
+//     // }
+//   }
+
+
+//   & p {
+//     font-size: 3rem;
+//     margin-bottom: 2rem;
+
+//     // @include respond(phone) {
+//     //   font-size: 3.5rem;
+//     //   margin-bottom: 2rem;
+//     // }
+
+//     // @include respond(phone-small) {
+//     //   font-size: 3rem;
+//     // }
+//   }
+
+//   &-title {
+//     font-size: 2rem;
+//     text-align: center;
+//     color: white;
+
+//     &-head {
+//       font-family: "adoveFnt22";
+//       display: flex;
+//       flex-direction: column;
+//       font-size: 3rem;
+//       margin-bottom: 1.5rem;
+//       width: fit-content;
+//       max-width: 112rem;
+//       margin-left: 15rem;
+//       margin-right: auto;
+//       margin-bottom: -9rem;
+//       position: absolute;
+//       left: 50%;
+//       transform: translate(-80%, 10%);
+
+//       // @include respond(big-desktop) {
+//       //   margin-left: 0rem;
+//       // }
+
+//       // @include respond(small-desktop) {
+//       //   font-size: 5.8rem;
+//       //   line-height: 7rem;
+//       //   overflow: hidden;
+//       // }
+
+//       // @include respond(tab-land) {
+//       //   position: inherit;
+//       //   font-size: 5rem;
+//       //   line-height: 6rem;
+//       //   overflow: hidden;
+//       // }
+
+//       // @include respond(tab-port) {
+//       //   font-size: 3.5rem;
+//       //   line-height: 5rem;
+//       //   padding: 0 3rem;
+//       //   overflow: hidden;
+//       //   text-align: center;
+//       //   // margin: auto;
+//       //   width: 100%;
+//       //   left: 0%;
+//       //   transform: translate(0%, 10%);
+//       // }
+
+//       // @include respond(phone-small) {
+//       //   font-size: 2.5rem;
+//       //   line-height: 4rem;
+//       //   width: 100%;
+//       // }
+
+//       & span {
+//         overflow: hidden;
+//         font-family: "adoveFnt22-bold";
+//         font-size: 7rem;
+
+//         // @include respond(tab-port) {
+//         //   font-size: 4.5rem;
+//         // }
+//       }
+//     }
+//   }
+// }
+
+
+// .about-setion {
+//   padding: 10rem 7rem;
+
+//   @include respond(phone) {
+//     padding: 5rem 0rem;
+//   }
+
+//   &__info {
+//     margin: auto;
+//     font-size: 4.5rem;
+//     min-width: 90rem;
+//     max-width: 122rem;
+
+//     & {
+//       transform: translateY(40%);
+//       opacity: 0;
+//       transition: all 0.5s;
+//       will-change: transform opacity;
+//     }
+
+//     &.is-visible {
+//       overflow: hidden;
+//       transform: translateY(0%);
+//       opacity: 1;
+//     }
+
+//     @include respond(mini-desktop) {
+//       min-width: 0;
+//       max-width: 95vw;
+//     }
+
+//     @include respond(phone) {
+//       text-align: center;
+//       font-size: 2.5rem;
+//       min-width: 0;
+//       max-width: 97vw;
+//     }
+
+//     &:first-child {
+//       margin-bottom: 7rem;
+
+//       @include respond(tab-port) {
+//         margin-bottom: 0rem;
+//       }
+//     }
+
+//     &:hover &-title {
+//       background-position: 0 -100%;
+//     }
+
+//     &-title {
+//       font-family: "adoveFnt22-bold";
+
+//       font-size: 5rem;
+//       position: relative;
+//       display: inline-block;
+//       color: $color-primary-dark;
+//       background: linear-gradient(to right,
+//           $color-primary-dark,
+//           $color-primary-dark 50%,
+//           black 50%);
+//       background-clip: text;
+//       -webkit-background-clip: text;
+//       -webkit-text-fill-color: transparent;
+//       background-size: 200% 100%;
+//       background-position: -100%;
+//       overflow: hidden;
+//       transition: background-position 275ms ease;
+//       text-decoration: none; // text decorations are clipped in WebKit browsers
+
+//       @include respond(phone) {
+//         font-size: 3.4rem;
+//         letter-spacing: -0.1rem;
+//       }
+//     }
+
+//     &-text {
+//       width: 100%;
+
+//       @include respond(phone) {
+//         font-size: 2.5rem;
+//         line-height: 4rem;
+//         overflow: hidden;
+//         padding: 0rem 3rem;
+//       }
+
+//       & span.bold {
+//         font-family: "adoveFnt22-bold";
+//         padding: 0;
+//       }
+
+//       &-newlineOnMobile {
+//         @include respond(phone) {
+//           &::before {
+//             content: "\A";
+//             white-space: pre-line;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .pros-section {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 10rem 7rem 12rem;
+//   background-color: $color-black;
+//   color: $color-white;
+//   // overflow: auto;
+
+//   @include respond(phone) {
+//     font-weight: bold;
+//     background-color: $color-grey-light-1;
+//     color: $color-black;
+//     padding: 6rem 1rem;
+//   }
+
+//   &-title {
+//     font-family: "adoveFnt22-bold";
+//     color: $color-primary;
+//     font-size: 9rem;
+//     margin-bottom: 4rem;
+
+//     & {
+//       transform: translateY(10%);
+//       opacity: 0;
+//       transition: all 0.5s;
+//       will-change: transform opacity;
+//     }
+
+//     &.is-visible {
+//       overflow: hidden;
+//       transform: translateY(0%);
+//       opacity: 1;
+//     }
+
+//     @include respond(small-desktop) {
+//       font-size: 7rem;
+//     }
+
+//     @include respond(tab-land) {
+//       font-size: 7rem;
+//     }
+
+//     @include respond(mini-desktop) {
+//       font-size: 7rem;
+//     }
+
+//     @include respond(tab-port) {
+//       font-size: 5rem;
+//     }
+
+//     @include respond(phone) {
+//       font-size: 3rem;
+//       align-self: center;
+//       text-align: center;
+//     }
+
+//     &-span {
+//       opacity: 0;
+//       transition: all 0.5s;
+//       transition-delay: 0.5s;
+//       will-change: transform opacity;
+
+//       &.is-visible {
+//         overflow: hidden;
+//         transform: translateY(0%);
+//         opacity: 1;
+//       }
+//     }
+//   }
+
+//   &-list {
+//     display: flex;
+//     flex-direction: column;
+
+//     @include respond(phone) {
+//       display: flex;
+//       flex-direction: column;
+//       padding: 0 1rem;
+//     }
+
+//     &__item {
+//       display: flex;
+//       align-items: center;
+//       position: relative;
+//       margin: 1rem 0;
+//       float: left;
+//       text-align: center;
+//       align-items: start;
+
+//       font-size: 4.5rem;
+
+//       @include respond(small-desktop) {
+//         font-size: 3.5rem;
+//       }
+
+//       @include respond(tab-land) {
+//         font-size: 3rem;
+//       }
+
+//       @include respond(mini-desktop) {
+//         font-size: 3.5rem;
+//       }
+
+//       @include respond(tab-port) {
+//         font-size: 2.5rem;
+//       }
+
+//       @include respond(phone) {
+//         margin: 0;
+//         flex-direction: column-reverse;
+//         font-size: 2.6rem;
+//         align-items: center;
+
+//         &:last-child &-smile-outer {
+//           display: none;
+//         }
+//       }
+
+//       &:hover &-smile-inner {
+//         color: $color-primary;
+//       }
+
+//       &:hover &-smile-outer {
+//         transform: rotate(-25deg);
+//       }
+
+//       &-smile-outer {
+//         position: relative;
+//         width: 6rem;
+//         height: 3rem;
+//         overflow: hidden;
+//         background-color: black;
+//         margin-left: 5rem;
+//         margin-top: 2.4%;
+
+//         transition: all 0.2s;
+
+//         @include respond(mini-desktop) {
+//           width: 4rem;
+//           height: 2rem;
+//         }
+
+//         @include respond(phone) {
+//           width: 4rem;
+//           height: 2rem;
+
+//           margin: 3rem 0;
+//           background-color: $color-grey-light-1;
+//           color: $color-primary;
+//         }
+//       }
+
+//       &-smile-inner {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         width: 6rem;
+//         height: 6rem;
+//         border-radius: 50%;
+//         box-sizing: border-box;
+//         border: 10px solid;
+//         transition: all 0.2s;
+
+//         @include respond(mini-desktop) {
+//           width: 4rem;
+//           height: 4rem;
+//           border: 6px solid;
+//         }
+
+//         @include respond(phone) {
+//           width: 4rem;
+//           height: 4rem;
+//         }
+//       }
+
+//       &-flex {
+//         display: flex;
+//         flex-direction: column;
+//         text-align: start;
+
+//         @include respond(phone) {
+//           text-align: center;
+//         }
+//       }
+
+//       &-mobile-flex {
+//         @include respond(phone) {
+//           display: flex;
+//           flex-direction: column;
+//         }
+//       }
+
+//       &-span {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// .footer {
+//   width: 100%;
+//   margin-top: -10px;
+//   margin-right: auto;
+//   margin-bottom: 6rem;
+
+//   @include respond(tab-port) {
+//     width: 100vw;
+//     margin-top: -2rem;
+//     margin-bottom: 0rem;
+//     display: flex;
+//     place-content: space-between;
+//   }
+
+//   &__right {
+//     width: 50%;
+//     align-self: center;
+
+//     @include respond(tab-port) {
+//       width: 25%;
+//     }
+
+//     @include respond(tab-port) {
+//       width: 40%;
+//     }
+//   }
+
+//   &__left {
+//     width: 60%;
+//     height: 20rem;
+//     margin-right: auto;
+//     position: relative;
+
+//     @include respond(mini-desktop) {
+//       padding: 0 0rem 0rem 10rem;
+//     }
+
+//     @include respond(tab-port) {
+//       display: flex;
+//       align-self: center;
+//       justify-self: center;
+//     }
+//   }
+
+//   &-logo {
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translate(-30%, 0px);
+
+//     @include respond(mini-desktop) {
+//       left: 40%;
+//     }
+
+//     @include respond(tab-port) {
+//       width: 80%;
+//       align-self: center;
+//       justify-self: center;
+//       transform: translate(-30%, 0px);
+//     }
+
+//     @include respond(phone) {
+//       bottom: 0%;
+//       transform: translate(-30%, -60%);
+//     }
+//   }
+
+//   .smiley {
+//     @include respond(tab-port) {
+//       display: block;
+//       width: 100%;
+//     }
+
+//     @include respond(phone) {
+//       display: block;
+//       width: 100%;
+//     }
+//   }
+// }
+
+// .desktop {
+//   display: block;
+
+//   @include respond(tab-port) {
+//     display: none;
+//   }
+// }
+
+// .mobile {
+//   display: none;
+
+//   @include respond(tab-port) {
+//     display: block;
+//   }
+// }

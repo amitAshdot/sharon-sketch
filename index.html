@@ -49,6 +49,11 @@
 
 <body>
   <header class="header">
+    <picture>
+      <source media="(max-width: 500px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-S.webp">
+      <source media="(max-width: 1920px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-M.webp">
+      <img alt="logo" src="./images/logo/BOOMERANG-LOGO-FIN.webp" class="header-logo" fetchpriority="high" />
+    </picture>
   </header>
   <main>
 
@@ -60,12 +65,7 @@
       </picture>
 
       <div class="top-container">
-        <picture>
-          <source media="(max-width: 500px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-S.webp">
-          <source media="(max-width: 1920px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-M.webp">
-          <img alt="logo" width="1054" height="527.406" src="./images/logo/BOOMERANG-LOGO-FIN.webp" class="top-logo"
-            fetchpriority="high" />
-        </picture>
+
         <h1>
           בית לתנועה בלתי פוסקת<br>
           עם קהילה חזקה וטובה של מתאמנים
@@ -88,13 +88,13 @@
       </div>
       <div class="about-left">
         <h2 class="about-title ">נעים להכיר</h2>
-        <p class="about-text ">ליאתיס הינו סטודיו חדשני ומקצועי אשר משלב בתוכו סוגי שיעורים שונים, פילאטיס
-          קלאסי ומודרני
-          ופורץ גבולות לשיעורים דינאמים
-          ואנרגטיים כמו BARRE , פיט, ויוגה.
-          בנוסף הסטודיו עוסק בהכשרות והשתלמויות מקצועיות, החל מקורס הכשרות מדריכים (פילאטיס מזרן, מכשירים ו-BAARE ) דרך
-          סדנאות
-          העמקה, שיעורי מדריכים ועוד...</p>
+        <p class="about-text ">
+          בומרנג הוא סטודיו עם אווירה של בית, יש בו מגוון שיעורי פילאטיס מכשירים, פיט ותחנות.
+
+          הסטודיו כולו מעוצב עבורכם. חשוב לנו שתגיעו בכיף גדול להתאמן.
+          אז שריינו לעצמכם שיעור ותגיעו, כל השאר עלינו.
+
+        </p>
         <div id="about-cta">
           <a class="about-cta btn" href="#form">בואו ניפגש</a>
         </div>
@@ -110,12 +110,12 @@
       <h2 class="lessons__title ">
         הצטרפו לאחד מהשיעורים שלנו
       </h2>
-      <div class="lessons ">
+      <div class="lessons">
 
         <div class="lesson-container ">
           <div class="lesson" id="1">
             <div class="lesson-top">
-              <h3 class="lesson-top-title">שיעור הדגמה</h3>
+              <h3 class="lesson-top-title">שיעורי פילאטיס מכשרים</h3>
               <div class="lesson-top-grades">
                 <!-- <div class="lesson-top-grades">
                   <div class="lesson-top-grade">1</div>
@@ -123,23 +123,21 @@
               </div>
             </div>
             <div class="lesson-text">
-              <p class="lesson-text-short">תנו לגוף שלכם להכיר את עולם הפילטיס בחינם!</p>
+              <p class="lesson-text-short">אימון המפתח את הגוף באופן מאוזן ושווה</p>
             </div>
             <div class="lesson-hidden">
               <div class="lesson-hidden-container">
                 <div class="lesson-hidden-exit">X</div>
                 <div class="lesson-hidden-right">
-                  <h3 class="lesson-hidden-right-title">שיעור הדגמה</h3>
+                  <h3 class="lesson-hidden-right-title">שיעורי פילאטיס מכשרים</h3>
                   <!-- <div class="lesson-hidden-right-grades">
                     <div class="lesson-hidden-right-grade">1</div>
                   </div> -->
-                  <p class="lesson-hidden-text">אנחנו מאמינים שפילטיס אמור להיות לכולם, לכן החלטנו להעניק לכם 30 דקות
-                    ראשונות
-                    חינם! ככה תוכלו להכיר, להרגיש ולהתאהב
-                    בפילטיס שלנו. אימון לכל הגוף יחד עם המאמנים שלנו, לכל אחד מעל 500 שעות ניסיון בהדרכת פילטיס, השיעור
-                    הזה
-                    הוא שיעור מושלם
-                    למי שמעולם לא ניסה או שמתלבט לגבי האימונים !</p>
+                  <p class="lesson-hidden-text">פילאטיס הוא אימון המפתח את הגוף באופן מאוזן ושווה, מתקן יציבה לקויה,
+                    משמר את חיות וחיוניות הגוף.
+                    הפילאטיס פונה אל הגוף כמכלול ומעודד אורח חיים בריא, כדי שהגוף יוכל לבצע בקלות וביעלות את כל הפעולות
+                    היומיומיות.
+                  </p>
                 </div>
 
                 <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
@@ -153,7 +151,7 @@
         <div class="lesson-container ">
           <div class="lesson left" id="2">
             <div class="lesson-top">
-              <h3 class="lesson-top-title">שיעור הדגמה</h3>
+              <h3 class="lesson-top-title">שיעורי FIT</h3>
               <!-- <div class="lesson-top-grades">
                 <div class="lesson-top-grade">1</div>
               </div> -->
@@ -165,17 +163,13 @@
               <div class="lesson-hidden-container">
                 <div class="lesson-hidden-exit">X</div>
                 <div class="lesson-hidden-right">
-                  <h3 class="lesson-hidden-right-title">שיעור הדגמה</h3>
+                  <h3 class="lesson-hidden-right-title">שיעורי FIT</h3>
                   <!-- <div class="lesson-hidden-right-grades">
                     <div class="lesson-hidden-right-grade">2</div>
                   </div> -->
-                  <p class="lesson-hidden-text">אנחנו מאמינים שפילטיס אמור להיות לכולם, לכן החלטנו להעניק לכם 30 דקות
-                    ראשונות
-                    חינם! ככה תוכלו להכיר, להרגיש ולהתאהב
-                    בפילטיס שלנו. אימון לכל הגוף יחד עם המאמנים שלנו, לכל אחד מעל 500 שעות ניסיון בהדרכת פילטיס, השיעור
-                    הזה
-                    הוא שיעור מושלם
-                    למי שמעולם לא ניסה או שמתלבט לגבי האימונים !</p>
+                  <p class="lesson-hidden-text">שיעור פילאטיס מכשירים המשלב תרגילים מעולם הפונקציונלי.
+                    שיעור בקצב מהיר, בדופק גבוה עם מוזיקה ואווירה מלאת אדרנלין.
+                  </p>
                 </div>
 
                 <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
@@ -188,7 +182,7 @@
         <div class="lesson-container">
           <div class="lesson" id="3">
             <div class="lesson-top">
-              <h3 class="lesson-top-title">שיעור הדגמה</h3>
+              <h3 class="lesson-top-title">שיעורי תחנות</h3>
               <!-- <div class="lesson-top-grades">
                 <div class="lesson-top-grade">2</div>
                 <div class="lesson-top-grade">3</div>
@@ -201,18 +195,15 @@
               <div class="lesson-hidden-container">
                 <div class="lesson-hidden-exit">X</div>
                 <div class="lesson-hidden-right">
-                  <h3 class="lesson-hidden-right-title">שיעור הדגמה</h3>
+                  <h3 class="lesson-hidden-right-title">שיעורי תחנות</h3>
                   <!-- <div class="lesson-hidden-right-grades">
                     <div class="lesson-hidden-right-grade">2</div>
                     <div class="lesson-hidden-right-grade">3</div>
                   </div> -->
-                  <p class="lesson-hidden-text">אנחנו מאמינים שפילטיס אמור להיות לכולם, לכן החלטנו להעניק לכם 30 דקות
-                    ראשונות
-                    חינם! ככה תוכלו להכיר, להרגיש ולהתאהב
-                    בפילטיס שלנו. אימון לכל הגוף יחד עם המאמנים שלנו, לכל אחד מעל 500 שעות ניסיון בהדרכת פילטיס, השיעור
-                    הזה
-                    הוא שיעור מושלם
-                    למי שמעולם לא ניסה או שמתלבט לגבי האימונים !</p>
+                  <p class="lesson-hidden-text">שיעור שעובדים בו לפי זמני השעון.
+                    בכל תחנה תפגשו תרגיל ואביזר שונה, כל השיעור מלווה במוזיקה קצבית.
+                    השיעור מתאים לכל רמות המתאמן וכולם יכולים למצוא מקום בשיעור.
+                  </p>
                 </div>
 
                 <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer

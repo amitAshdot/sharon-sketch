@@ -56,6 +56,16 @@
         left: -1rem;
     }
 
+    &#\31 {}
+
+    &#\32 {
+        background: $color-secondary;
+    }
+
+    &#\33 {
+        background: $color-primary;
+    }
+
     &-container {
         position: relative;
         bottom: 0;
