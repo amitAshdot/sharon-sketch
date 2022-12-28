@@ -16,7 +16,8 @@
         // overflow: visible;
         // position: relative;
         // display: flex;
-        border: 1px solid green;
+
+        // border: 1px solid green;
 
 
         @include respond(tab-port) {
@@ -37,7 +38,10 @@
 }
 
 .lesson {
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
     overflow: visible;
     background: $color-last;
     position: absolute;
@@ -49,8 +53,9 @@
     z-index: 5;
 
     &>* {
-        // overflow: visible;
+        overflow: hidden;
     }
+
 
     &.left {
         left: -1rem;
@@ -90,7 +95,15 @@
             justify-content: center;
         }
 
-        &-title {}
+        &-title {
+            font-size: 2rem;
+
+            @include respond(tab-port) {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                overflow: hidden;
+            }
+        }
 
         &-grades {
             display: flex;
@@ -133,6 +146,11 @@
         opacity: 0;
         transition: all 1s;
 
+
+        & * {
+            overflow: hidden;
+        }
+
         &-container {
             position: absolute;
             top: 50%;
@@ -152,7 +170,8 @@
             @include respond(tab-port) {
                 flex-direction: column;
                 padding: 1.5rem;
-                height: 70%;
+                // height: 70%;
+                height: auto;
             }
         }
 
@@ -174,11 +193,20 @@
             }
         }
 
+        &-cta {
+            display: flex;
+        }
+
         &-right {
             width: 50%;
 
             @include respond(tab-port) {
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
             }
 
             &-title {

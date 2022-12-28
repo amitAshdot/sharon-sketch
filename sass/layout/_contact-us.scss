@@ -21,7 +21,7 @@
     margin-top: 0rem;
     // margin-inline-start: 8rem;
     padding-inline: 5rem;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     @include respond(tab-port) {
         flex-direction: column;

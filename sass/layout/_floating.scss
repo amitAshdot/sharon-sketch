@@ -22,3 +22,27 @@
         }
     }
 }
+
+.floating.about-triangle {
+    position: relative;
+    overflow: visible;
+    height: 0rem;
+
+    & img {
+        width: 10rem;
+        position: absolute;
+        top: -60px;
+    }
+
+    & .triangle {
+        position: absolute;
+        bottom: -19rem;
+        right: 15rem;
+        width: 0;
+        height: 0;
+        border-left: 4rem solid transparent;
+        border-right: 4rem solid transparent;
+        border-top: 7rem solid $color-secondary;
+        transform: rotate(45deg);
+    }
+}

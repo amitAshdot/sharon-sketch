@@ -59,14 +59,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //------START LESSON-----
+    // events
     $(".lesson").click(function (e) {
         e.preventDefault();
         showLesson(e);
     });
-    $(".lesson-hidden").click(function (e) {
+    $(".lesson-hidden-exit").click(function (e) {
         e.preventDefault();
-        hideLesson(e);
+        hideLesson();
     });
+    $(".lesson-hidden-btn").click(function (e) {
+        let element = document.getElementById("form");
+        scrollToElement(element);
+        hideLesson();
+    })
+    // utils
     const showLesson = (event) => {
         let lesson = event.currentTarget;
         let lessonId = lesson.id;
@@ -74,19 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
         lessonHide.style.display = "block";
         lessonHide.style.opacity = "1";
         lesson.classList.add("show");
-        // let lessonHide = lesson.children[2];
-        // if (lesson.classList.contains("show")) {
-        //     lessonHide.style.display = "none";
-        //     lessonHide.style.opacity = "0";
-        //     lesson.classList.remove("show");
-        // } else {
-        //     lessonHide.style.display = "block";
-        //     lessonHide.style.opacity = "1";
-        //     lesson.classList.add("show");
-        // }
+        lesson.classList.add("show");
     }
-
-    const hideLesson = (event) => {
+    const hideLesson = () => {
         let lesson = document.getElementsByClassName("lesson");
         let lessonHide = document.getElementsByClassName("lesson-hidden");
         for (let i = 0; i < lesson.length; i++) {
@@ -95,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             lessonHide[i].style.opacity = "0";
         }
     }
+
     //------END LESSON-----
 
 

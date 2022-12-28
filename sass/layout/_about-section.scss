@@ -5,8 +5,8 @@
         position: relative;
         display: flex;
 
-        border: 1px solid blue;
         overflow: visible;
+        // border: 1px solid blue;
 
         @include respond(tab-port) {
             flex-direction: column;

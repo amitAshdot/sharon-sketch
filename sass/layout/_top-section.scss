@@ -2,10 +2,10 @@
     &-section {
         // min-height: 100vh;
         position: relative;
-        border: 1px solid red;
         overflow: hidden;
         margin-block-start: $header-height;
 
+        // border: 1px solid red;
         @include respond(tab-port) {
             // min-height: 100vh;
             margin-block-start: $header-height-mobile;
