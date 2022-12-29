@@ -1,7 +1,8 @@
 .contact-us {
     &-section {
         padding-inline: 5rem;
-        margin-block: 2rem;
+        // margin-block: 2rem;
+        margin-block: 10rem;
         overflow: hidden;
 
         @include respond(tab-port) {
@@ -10,8 +11,14 @@
         }
     }
 
+    &-title {
+        margin: auto;
+        text-align: center;
+    }
 
 }
+
+
 
 .form {
     position: relative;
