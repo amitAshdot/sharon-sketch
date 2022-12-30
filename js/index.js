@@ -163,13 +163,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // -----END EMAIL VALIDATION-----
 
     // -----START EMAIL SUBMIT-----
-    document.getElementById("form").addEventListener("submit", function (e) {
+    document.getElementById("form").addEventListener("submit", async function (e) {
         if (validateForm()) {
-            // e.preventDefault();
+            e.preventDefault();
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: 'mail.php',
+                url: 'https://formspree.io/f/xeqwjynq',
                 data: data,
                 success: function (mail) {
                     window.location.href = 'thanks.html';
@@ -196,7 +196,8 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             return false
         }
-    }, { passive: true });
+    });
+    // }, { passive: true });
     // -----END EMAIL SUBMIT-----
 
 
