@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // -----START EMAIL SUBMIT-----
     document.getElementById("form").addEventListener("submit", function (e) {
         if (validateForm()) {
-            e.preventDefault();
+            // e.preventDefault();
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
