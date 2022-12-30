@@ -165,15 +165,41 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("form").addEventListener("submit", async function (e) {
         if (validateForm()) {
             e.preventDefault();
-            var data = $(this).serialize();
-            $.ajax({
-                type: "POST",
-                url: 'https://forms.un-static.com/forms/162a433291d2f61014e12b3c1d823d7b33c2114c',
-                data: data,
-                success: function (mail) {
-                    window.location.href = 'thanks.html';
+            var form = document.getElementById("form");
+
+            // var data = $(this).serialize();
+            var data = new FormData(e.target);
+            fetch(e.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
                 }
-            });
+            }).then(response => {
+                if (response.ok) {
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                console.log(error)
+            })
+            // $.ajax({
+            //     type: "POST",
+            //     url: 'https://forms.un-static.com/forms/162a433291d2f61014e12b3c1d823d7b33c2114c',
+            //     data: data,
+            //     success: function (mail) {
+            //         window.location.href = 'thanks.html';
+            //     }
+            // });
+
+
             // console.log(data)
             // $.ajax({
             //     type: "POST",
