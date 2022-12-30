@@ -72,8 +72,9 @@
 
     &-submit {
         // @include global-btn(white, $color-primary-light, white);
+        @include global-btn($color-white, $color-primary, $color-black);
         @include submitBasic($color-primary-light);
-        @include shine($color-primary-light);
+        // @include shine($color-primary-light);
         width: 20%;
         text-align: center;
 
@@ -81,9 +82,9 @@
             width: 100%;
         }
 
-        &:hover {
-            @include buttonHover;
-        }
+        // &:hover {
+        //     @include buttonHover;
+        // }
     }
 
 }

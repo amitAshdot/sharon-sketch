@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".lesson").click(function (e) {
         e.preventDefault();
         showLesson(e);
+        changeLessonColor(e);
     });
     $(".lesson-hidden-exit").click(function (e) {
         e.preventDefault();
@@ -92,6 +93,23 @@ document.addEventListener("DOMContentLoaded", function () {
             lessonHide[i].style.opacity = "0";
         }
     }
+
+    const changeLessonColor = (element) => {
+        let lesson = element;
+        let root = document.documentElement;
+        let currentBG = window.getComputedStyle(element.currentTarget).backgroundColor
+        console.log(currentBG);
+
+        $(".lesson-hidden-exit").css({ "backgroundColor": currentBG });
+        $(".lesson-hidden-btn").css({ "backgroundColor": currentBG });
+
+        // debugger
+
+
+        root.style.setProperty(' --currentColor', window.getComputedStyle(element.currentTarget).backgroundColor);
+        root.style.setProperty('--currentColorDark', window.getComputedStyle(element.currentTarget).backgroundColor);
+    }
+
 
     //------END LESSON-----
 
