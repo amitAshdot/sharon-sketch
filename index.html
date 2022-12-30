@@ -54,7 +54,7 @@
       <picture>
         <source media="(max-width: 500px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-S.webp">
         <source media="(max-width: 1920px)" srcset="./images/logo/BOOMERANG-LOGO-FIN-M.webp">
-        <img alt="logo" src="./images/logo/BOOMERANG-LOGO-FIN.webp" class="header-logo-img" fetchpriority="high" />
+        <img alt="לוגו" src="./images/logo/BOOMERANG-LOGO-FIN.webp" class="header-logo-img" fetchpriority="high" />
       </picture>
     </div>
   </header>
@@ -64,7 +64,8 @@
     <section class="top-section">
       <picture>
         <source media="(max-width: 760px)" srcset="./images/temp-bg-m.webp" width="535" height="586">
-        <img src="./images/temp-bg.webp" alt="" class="top-img" width="104" height="104" fetchpriority="high" />
+        <img src="./images/temp-bg.webp" alt="תמונת רקע" class="top-img" width="104" height="104"
+          fetchpriority="high" />
       </picture>
 
       <div class="top-container">
@@ -88,7 +89,7 @@
         <picture>
           <source media="(max-width: 760px)" srcset="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" defer width=""
             height="">
-          <img src="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" alt="תמונה ראשית" class="about-img"
+          <img src="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" alt="משולש צף" class="about-img"
             width="183.992" height="171.109" />
         </picture>
 
@@ -98,7 +99,8 @@
       <div class="about-right ">
         <picture>
           <source media="(min-width: 900px)" srcset="./images/temp-woman.webp" defer width="535" height="586">
-          <img defer src="./images/temp-woman-m.webp" alt="תמונה ראשית" class="about-img" width="104" height="104" />
+          <img defer src="./images/temp-woman-m.webp" alt="נעים להכיר אודות" class="about-img" width="104"
+            height="104" />
         </picture>
       </div>
       <div class="about-left">
@@ -139,7 +141,7 @@
               </div>
             </div>
             <div class="lesson-text">
-              <p class="lesson-text-short">אימון המפתח את הגוף באופן מאוזן ושווה</p>
+              <h4 class="lesson-text-short">אימון המפתח את הגוף באופן מאוזן ושווה</h4>
             </div>
           </div>
           <div class="u-fake-border"></div>
@@ -165,8 +167,8 @@
               </div>
             </div>
 
-            <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
-              loading="lazy" />
+            <img alt="פילאטיס מכשירים" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg"
+              defer loading="lazy" />
           </div>
         </div>
 
@@ -179,7 +181,7 @@
               </div> -->
             </div>
             <div class="lesson-text">
-              <p class="lesson-text-short">חושבים שאתם מסוגלים לזה?</p>
+              <h4 class="lesson-text-short">חושבים שאתם מסוגלים לזה?</h4>
             </div>
           </div>
           <div class="u-fake-border"></div>
@@ -204,7 +206,7 @@
               </div>
             </div>
 
-            <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
+            <img alt="אימון FIT" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
               loading="lazy" />
           </div>
         </div>
@@ -219,7 +221,7 @@
               </div> -->
             </div>
             <div class="lesson-text">
-              <p class="lesson-text-short">לאנשים שאוהבים אתגרים</p>
+              <h4 class="lesson-text-short">לאנשים שאוהבים אתגרים</h4>
             </div>
           </div>
           <div class="u-fake-border"></div>
@@ -246,8 +248,8 @@
               </div>
             </div>
 
-            <img alt="" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg" defer
-              loading="lazy" />
+            <img alt="אימון תחנות" width="" height="" class="lesson-hidden-text-img" src="./images/temp-machine.jpg"
+              defer loading="lazy" />
           </div>
         </div>
       </div>
@@ -260,9 +262,17 @@
       <form class="contact-us-container form " id="form"
         action="https://forms.un-static.com/forms/162a433291d2f61014e12b3c1d823d7b33c2114c" method="post"
         accept-charset="utf-8">
-        <input name="name" id="name" type="text" placeholder="שם מלא" class="form-input" required="">
-        <input name="phone" id="phone" type="tel" placeholder="טלפון" class="form-input" required="">
-        <input name="email" id="email" type="email" placeholder="אימייל" class="form-input" required="">
+        <label id="namelabel" for="name">שם מלא"</label>
+        <input name="name" aria-labelledby="namelabel" id="name" type="text" placeholder="שם מלא" class="form-input"
+          required="">
+
+        <label id="phonelabel" for="phone">טלפון</label>
+        <input name="phone" aria-labelledby="phonelabel" id="phone" type="tel" placeholder="טלפון" class="form-input"
+          required="">
+
+        <label id="emaillabel" for="email">אימייל</label>
+        <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל" class="form-input"
+          required="">
         <!-- <textarea name="message" id="message" placeholder="הודעה" class="form-input" required=""></textarea> -->
         <div class="btn-container">
           <input type="submit" value="שלח" class="form-submit btn">
@@ -319,7 +329,7 @@
           <picture>
             <source media="(max-width: 760px)" srcset="./images/sharon-blackwhite_1.webp" width="257.602" height="586"
               type="image/webp">
-            <img class="popup-img" defer src="./images/sharon-blackwhite_1.webp" alt="חבר מביא חבר" title="חבר מביא חבר"
+            <img class="popup-img" defer src="./images/sharon-blackwhite_1.webp" alt="פופאפ" title="חבר מביא חבר"
               loading="lazy">
           </picture>
         </div>

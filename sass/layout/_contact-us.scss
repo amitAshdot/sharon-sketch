@@ -46,6 +46,9 @@
     //     height: 25rem;
     //     left: 2rem;
     // }
+    label {
+        display: none;
+    }
 
     &-input {
         @include inputBasic;
