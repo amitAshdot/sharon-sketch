@@ -46,7 +46,7 @@
   <!-- <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" /> -->
   <meta name="theme-color" content="#01cbcf">
 
-  <script src="https://www.google.com/recaptcha/api.js?render=6LfN8LwjAAAAAJU54R3jWOEVjbvjwxhpgDi7qHAU"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LfN8LwjAAAAAJU54R3jWOEVjbvjwxhpgDi7qHAU"></script>
   <script>
     grecaptcha.ready(function () {
       grecaptcha.execute('6LfN8LwjAAAAAJU54R3jWOEVjbvjwxhpgDi7qHAU', { action: 'submit' }).then(function (token) {
@@ -54,7 +54,7 @@
         document.getElementById('g-recaptcha-response').value = token;
       });
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -281,9 +281,9 @@
         <label id="emaillabel" for="email">אימייל</label>
         <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
           class="form-input show-on-scroll" required="">
-        <!-- <textarea name="message" id="message" placeholder="הודעה" class="form-input" required=""></textarea> -->
-        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-        <!-- replace with your recaptcha SITE key not secret key -->
+
+
+        <!-- <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"> -->
 
         <div class="btn-container show-on-scroll">
           <input type="submit" value="שלח" class="form-submit btn g-recaptcha" data-sitekey="reCAPTCHA_site_key"
