@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: 'https://formspree.io/f/xeqwjynq',
+                url: 'mail.php',
                 data: data,
                 success: function (mail) {
                     window.location.href = 'thanks.html';
