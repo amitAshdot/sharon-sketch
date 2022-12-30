@@ -22,6 +22,8 @@ const assets = [
     "images/logo/BOOMERANG-LOGO-FIN-W.webp",
     "images/temp-bg.webp",
     "images/temp-bg-m.webp",
+    "images/temp-bg-m.webp",
+    "fonts/ploni-regular-aaa.otf",
 ];
 
 self.addEventListener("install", installEvent => {
