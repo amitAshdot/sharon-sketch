@@ -109,30 +109,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const changeLessonColor = (element) => {
-        let lesson = element;
+        let lesson = element.currentTarget;
         let root = document.documentElement;
-        let currentBG = window.getComputedStyle(element.currentTarget).backgroundColor
-        console.log(currentBG);
-
+        let currentBG = window.getComputedStyle(lesson).backgroundColor
         $(".lesson-hidden-exit").css({ "backgroundColor": currentBG });
         $(".lesson-hidden-btn").css({ "backgroundColor": currentBG });
-
-        // debugger
-
-
-        root.style.setProperty(' --currentColor', window.getComputedStyle(element.currentTarget).backgroundColor);
-        root.style.setProperty('--currentColorDark', window.getComputedStyle(element.currentTarget).backgroundColor);
+        root.style.setProperty(' --currentColor', window.getComputedStyle(lesson).backgroundColor);
+        root.style.setProperty('--currentColorDark', window.getComputedStyle(lesson).backgroundColor);
     }
-
-
     //------END LESSON-----
-
-
     // -----START EMAIL VALIDATION-----
     const isNumberKey = (evt) => {
         let charCode = (evt.which) ? evt.which : evt.keyCode
-        if (charCode > 31 && (charCode < 48 || charCode > 57))
-            return false;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
         return true;
     }
     let phoneNumberInput = document.getElementById("phone");
@@ -164,10 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
             phone.classList.add("error");
             flag = true;
         }
-        // if (customer.value === "") {
-        //     customer.classList.add("error");
-        //     flag = true;
-        // }
         if (flag) {
             message.innerHTML = "אנא מלא/י את כל השדות הנדרשים";
             message.classList.add("error");
@@ -245,34 +230,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -----END CAROUSEL-----
 
-    // -----START SCROLL TO TOP-----
-    const scrollToTop = () => {
-        const c = document.documentElement.scrollTop || document.body.scrollTop;
-        if (c > 0) {
-            window.requestAnimationFrame(scrollToTop);
-            window.scrollTo(0, c - c / 8);
-        }
-    }
-    // document.getElementById("scrollToTop").addEventListener("click", function (e) {
-    //     e.preventDefault();
-    //     scrollToTop();
-    // });
-    // -----END SCROLL TO TOP-----
-
     // -----START SCROLL TO ELEMENT-----
     const scrollToElement = (element) => {
-        const elementDetails = element.getBoundingClientRect();
-        const elementPosition = elementDetails.top;
-        const offsetPosition = elementPosition - 100;
-        let t = window.pageYOffset
-        debugger
-
-        window.scrollTo({
-            // top: elementPosition,
-            top: 5000,
-            // top: offsetPosition,
-            behavior: "smooth"
-        });
+        // const elementDetails = element.getBoundingClientRect();
+        // const elementPosition = elementDetails.top;
+        // const offsetPosition = elementPosition - 100;
+        // let t = window.pageYOffset
+        window.scrollTo({ top: 5000, behavior: "smooth" });
     }
     // -----END SCROLL TO ELEMENT-----
     document.getElementById("popup-btn").addEventListener("click", function (e) {
@@ -283,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     );
     // ----- CLOSING POPUP -----
-
     document.getElementById("popup-exit").addEventListener("click", function (e) {
         e.preventDefault();
         document.getElementById("popup").style.display = "none";
@@ -298,11 +261,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // ----- END SHOWING POPUP -----
 
 
-    new PerformanceObserver((list) => {
-        const latestEntry = list.getEntries().at(-1);
-
-        if (latestEntry?.element?.getAttribute('loading') == 'lazy') {
-            console.warn('Warning: LCP element was lazy loaded', latestEntry);
-        }
-    }).observe({ type: 'largest-contentful-paint', buffered: true });
+    // new PerformanceObserver((list) => {
+    //     const latestEntry = list.getEntries().at(-1);
+    //     if (latestEntry?.element?.getAttribute('loading') == 'lazy') {
+    //         console.warn('Warning: LCP element was lazy loaded', latestEntry);
+    //     }
+    // }).observe({ type: 'largest-contentful-paint', buffered: true });
 }, { passive: true });

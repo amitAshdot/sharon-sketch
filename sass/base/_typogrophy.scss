@@ -73,7 +73,7 @@ body {
   will-change: transform opacity;
 
   &.is-visible {
-    overflow: hidden;
+    // overflow: hidden;
     opacity: 1;
     transform: translateY(0%);
   }

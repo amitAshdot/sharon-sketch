@@ -44,11 +44,11 @@
 
         & .btn-container {
             margin: 1rem auto 0;
-            width: 10rem;
+            width: 12rem;
 
-            @include respond(tab-port) {
-                width: 12rem;
-            }
+            // @include respond(tab-port) {
+            //     width: 12rem;
+            // }
         }
 
         & a {

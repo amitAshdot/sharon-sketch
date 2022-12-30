@@ -236,6 +236,10 @@
         &-right {
             width: 50%;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
 
             @include respond(tab-port) {
                 width: 100%;
@@ -298,6 +302,8 @@
 
             @include respond(tab-port) {
                 margin-top: 1rem;
+                width: 9rem;
+                height: 3rem;
             }
         }
 
