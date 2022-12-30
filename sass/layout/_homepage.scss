@@ -9,6 +9,8 @@
   width: 100vw;
   background: $color-white;
   opacity: 1;
+
+  will-change: opacity, transform;
   animation: backwards 0.5s moveOutHeader;
 
   @include respond(tab-port) {
