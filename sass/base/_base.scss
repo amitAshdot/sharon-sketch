@@ -11,47 +11,12 @@
   cursor: default;
 }
 
-// :root {
-//   --currentColor: var($color-primary);
-//   --currentColorDark: #{$color-primary-dark};
-// }
-
-// html {
-//   position: relative;
-//   scroll-behavior: smooth;
-//   -webkit-text-size-adjust: 100%;
-
-//   // font-size: 3.33333;
-
-//   font-size: calc(100vw * 0.04444444);
-//   // font-size: calc(12px + 1vw);
-
-//   min-height: 0vw;
-
-//   &::-webkit-scrollbar {
-//     display: none;
-//   }
-
-//   @include respond(min-tab-port) {
-//     // font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
-//     font-size: calc(100vw * 0.011111111);
-//   }
-
-//   @include respond(min-biggest) {
-//     font-size: 16px;
-//     max-width: 1440px;
-//     margin: auto;
-//     // background: $color-primary;
-//   }
-// }
 html {
   position: relative;
   scroll-behavior: smooth;
 
   font-size: calc(100vw * 0.011111111);
 
-  //     max-width: 1440px;
-  //     margin: auto;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -61,19 +26,12 @@ html {
     font-size: 16px;
   }
 
-  // @include respond(tab-land) {
-  //   font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
-  // }
 
   @include respond(tab-port) {
     font-size: 50%; // 1rem = 8px, 8 / 16 = 50%
     font-size: calc(100vw * 0.04444444);
   }
 
-  //   //no need since both phone and tablet-prt 50%
-  //   // @include respond(phone) {
-  //   //     font-size: 43.75%;
-  //   // }
 }
 
 body {
