@@ -52,7 +52,7 @@
     height: 100%;
     margin: auto;
     cursor: pointer;
-    z-index: 5;
+    z-index: 1;
 
     &>* {
         overflow: hidden;
@@ -93,7 +93,7 @@
         position: relative;
         bottom: 0;
         width: 33%;
-        border: 1px solid;
+        // border: 1px solid;
         min-height: 12rem;
         overflow: visible;
         cursor: pointer;
@@ -235,6 +235,7 @@
 
         &-right {
             width: 50%;
+            position: relative;
 
             @include respond(tab-port) {
                 width: 100%;
@@ -284,6 +285,24 @@
             &-img {
                 border-radius: 1rem;
             }
+        }
+
+        &-cta {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            height: 4rem;
+            width: 12rem;
+            overflow: visible;
+
+            @include respond(tab-port) {
+                margin-top: 1rem;
+            }
+        }
+
+        &-btn {
+            top: -0.5rem;
         }
 
         &-exit {

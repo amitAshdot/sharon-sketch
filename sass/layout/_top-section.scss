@@ -42,11 +42,21 @@
             overflow: hidden;
         }
 
+        & .btn-container {
+            margin: 1rem auto 0;
+            width: 10rem;
+
+            @include respond(tab-port) {
+                width: 12rem;
+            }
+        }
+
         & a {
             overflow: hidden;
 
             @include respond(tab-port) {
-                margin: 1rem 1rem 0;
+                top: -0.5rem;
+                right: -0.5rem;
             }
         }
 

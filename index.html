@@ -62,7 +62,7 @@
     <!--TOP SECTION START-->
     <section class="top-section">
       <picture>
-        <source media="(max-width: 760px)" srcset="./images/temp-bg.webp" width="535" height="586">
+        <source media="(max-width: 760px)" srcset="./images/temp-bg-m.webp" width="535" height="586">
         <img src="./images/temp-bg.webp" alt="" class="top-img" width="104" height="104" fetchpriority="high" />
       </picture>
 
@@ -72,8 +72,10 @@
           בית לתנועה בלתי פוסקת<br>
           עם קהילה חזקה וטובה של מתאמנים
         </h1>
-
-        <a href="#form" class="btn" target="">הרשמה לשעור ניסיון</a>
+        <div class="btn-container">
+          <a href="#form" class="btn" target="">הרשמה לשעור ניסיון</a>
+          <div class="u-fake-border u-round"></div>
+        </div>
       </div>
     </section>
     <!-- TOP SECTION END-->
@@ -85,8 +87,8 @@
         <picture>
           <source media="(max-width: 760px)" srcset="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" defer width=""
             height="">
-          <img defer src="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" alt="תמונה ראשית" class="about-img"
-            width="" height="" loading="lazy" />
+          <img src="./images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp" alt="תמונה ראשית" class="about-img"
+            width="183.992" height="171.109" loading="lazy" />
         </picture>
 
       </div>
@@ -94,8 +96,8 @@
 
       <div class="about-right ">
         <picture>
-          <source media="(max-width: 760px)" srcset="./images/temp-woman.jpg" defer width="535" height="586">
-          <img defer src="./images/temp-woman.jpg" alt="תמונה ראשית" class="about-img" width="104" height="104"
+          <source media="(min-width: 900px)" srcset="./images/temp-woman.webp" defer width="535" height="586">
+          <img defer src="./images/temp-woman-m.webp" alt="תמונה ראשית" class="about-img" width="104" height="104"
             loading="lazy" />
         </picture>
       </div>
@@ -108,8 +110,9 @@
           אז שריינו לעצמכם שיעור ותגיעו, כל השאר עלינו.
 
         </p>
-        <div id="about-cta">
-          <a class="about-cta btn" href="#form">בואו ניפגש</a>
+        <div class="about-cta">
+          <a class="about-cta-btn btn" href="#form">בואו ניפגש</a>
+          <div class="u-fake-border u-round"></div>
         </div>
       </div>
       <div class="floating circle about-circle">
@@ -139,6 +142,7 @@
               <p class="lesson-text-short">אימון המפתח את הגוף באופן מאוזן ושווה</p>
             </div>
           </div>
+          <div class="u-fake-border"></div>
         </div>
         <div class="lesson-hidden" id="first-hidden">
           <div class="lesson-hidden-container">
@@ -154,8 +158,10 @@
                 היומיומיות.
               </p>
 
-              <div id="lesson-hidden-cta">
+              <div class="lesson-hidden-cta">
                 <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <div class="u-fake-border u-round"></div>
+
               </div>
             </div>
 
@@ -176,6 +182,7 @@
               <p class="lesson-text-short">חושבים שאתם מסוגלים לזה?</p>
             </div>
           </div>
+          <div class="u-fake-border"></div>
         </div>
         <div class="lesson-hidden" id="second-hidden">
           <div class="lesson-hidden-container">
@@ -190,8 +197,10 @@
               </p>
 
 
-              <div id="lesson-hidden-cta">
+              <div class="lesson-hidden-cta">
                 <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <div class="u-fake-border u-round"></div>
+
               </div>
             </div>
 
@@ -213,6 +222,7 @@
               <p class="lesson-text-short">לאנשים שאוהבים אתגרים</p>
             </div>
           </div>
+          <div class="u-fake-border"></div>
         </div>
         <div class="lesson-hidden" id="third-hidden">
           <div class="lesson-hidden-container">
@@ -229,8 +239,10 @@
               </p>
 
 
-              <div id="lesson-hidden-cta">
+              <div class="lesson-hidden-cta">
                 <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <div class="u-fake-border u-round"></div>
+
               </div>
             </div>
 
@@ -250,7 +262,10 @@
         <input name="phone" id="phone" type="tel" placeholder="טלפון" class="form-input" required="">
         <input name="email" id="email" type="email" placeholder="אימייל" class="form-input" required="">
         <!-- <textarea name="message" id="message" placeholder="הודעה" class="form-input" required=""></textarea> -->
-        <input type="submit" value="שלח" class="form-submit btn">
+        <div class="btn-container">
+          <input type="submit" value="שלח" class="form-submit btn">
+          <div class="u-fake-border u-round"></div>
+        </div>
 
       </form>
     </div>
@@ -259,10 +274,10 @@
     <!-- GALLERY START -->
     <section class="gallery">
       <div class="slider">
-        <img defer src="./images/temp-machine.jpg" alt="" class="" loading="lazy" />
+        <!-- <img src="./images/temp-machine.jpg" alt="" class="" loading="lazy" /> -->
         <!-- <img defer src="./images/temp-trainer.jpg" alt="" class="" /> -->
-        <img defer src="./images/temp-trainer2.jpg" alt="" class="" loading="lazy" />
-        <img defer src="./images/temp-woman.jpg" alt="" class="" loading="lazy" />
+        <!-- <img src="./images/temp-trainer2.jpg" alt="" class="" loading="lazy" /> -->
+        <!-- <img src="./images/temp-woman.jpg" alt="" class="" loading="lazy" /> -->
       </div>
     </section>
     <!-- GALLERY EMD -->
@@ -291,7 +306,10 @@
 
           <div class="popup-title">לרגל ההשקה - מבצע חבר מביא חבר</div>
           <div class="popup-text">רוצים להאמן ביחד עם חבר? בואו ביחד לאימון איתנו ותקבלו 2 שיעורים חינם.</div>
-          <a class="popup-btn" id="popup-btn">להרשמה</a>
+          <div class="btn-container">
+            <a class="popup-btn" id="popup-btn">להרשמה</a>
+            <div class="u-fake-border u-round"></div>
+          </div>
         </div>
 
         <!-- <a href="#form" class="popup-btn btn" id="popup-btn">להרשמה</a> -->

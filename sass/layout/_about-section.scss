@@ -66,26 +66,34 @@
     }
 
     &-cta {
+        position: relative;
         display: flex;
         justify-content: center;
         margin-block: 2rem;
         margin-inline: auto;
-        width: 10rem;
-        overflow: hidden;
+        width: 12rem;
+        height: 4rem;
+        overflow: visible;
 
         @include respond(tab-port) {
             margin-block: 1rem;
         }
 
         a {
+            position: absolute;
             background: $color-primary;
-            color: $color-white;
+            // color: $color-white;
             padding: 1rem 2rem;
             border-radius: 5px;
             text-decoration: none;
             font-size: 1.5rem;
             transition: all 0.2s;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 1rem;
 
             &:hover {
                 background: $color-primary-dark;

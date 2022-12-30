@@ -51,9 +51,31 @@
     display: none !important;
   }
 }
+
 .u-mobile {
   display: none !important;
+
   @include respond(phone-small) {
     display: inherit !important;
   }
+}
+
+.u-fake-border {
+  // border: 1px solid $color-grey-light-2;
+  // border-radius: 0.5rem;
+  // padding: 2rem;
+  // margin-bottom: 2rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.u-round {
+  border-radius: 1rem;
 }

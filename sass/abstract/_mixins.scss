@@ -133,7 +133,7 @@
 }
 
 @mixin global-btn ($color, $bg, $borderColor) {
-  border: 2px solid $borderColor;
+  // border: 2px solid $borderColor;
   color: $color;
   background-color: $bg;
   padding: 0.6rem 1rem;

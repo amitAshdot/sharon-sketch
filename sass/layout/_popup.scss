@@ -153,7 +153,7 @@
         width: 10rem;
         height: 4rem;
         background-color: $color-primary;
-        color: $color-white;
+        // color: $color-white;
         font-size: 1.5rem;
         font-weight: 700;
         text-align: center;
@@ -162,6 +162,9 @@
         cursor: pointer;
         transition: all 0.3s;
         overflow: hidden;
+
+        top: -0.5rem;
+        right: 0.5rem;
 
         @include respond(mini-desktop) {
             width: 8rem;

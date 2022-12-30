@@ -72,11 +72,17 @@
 
     &-submit {
         // @include global-btn(white, $color-primary-light, white);
-        @include global-btn($color-white, $color-primary, $color-black);
-        @include submitBasic($color-primary-light);
+        // @include global-btn($color-black, $color-primary, $color-black);
+        // @include submitBasic($color-primary-light);
         // @include shine($color-primary-light);
-        width: 20%;
+
         text-align: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -0.5rem;
+        right: 0.5rem;
 
         @include respond(tab-port) {
             width: 100%;
