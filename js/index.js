@@ -166,8 +166,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("form").addEventListener("submit", function (e) {
         if (validateForm()) {
             e.preventDefault();
-            // var data = $(this).serialize();
-            // // console.log(data)
+            var data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: 'mail.php',
+                data: data,
+                success: function (mail) {
+                    window.location.href = 'thanks.html';
+                }
+            });
+            // console.log(data)
             // $.ajax({
             //     type: "POST",
             //     url: 'https://app.powerlink.co.il/web/webtoaccount.aspx',
