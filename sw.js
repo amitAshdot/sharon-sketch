@@ -13,7 +13,15 @@ const assets = [
     "images/logo/BOOMERANG-LOGO-FIN-M-.webp",
     "images/logo/BOOMERANG-LOGO-FIN-S-.webp",
     "images/floating/BOOMERANG-PRICE-BACK-_1_-_1_.webp",
+    "images/temp-woman-m.webp",
+    "images/temp-woman.webp",
     "images/floating/My-project.webp",
+    "images/logo/BOOMERANG-LOGO-FIN.webp",
+    "images/logo/BOOMERANG-LOGO-FIN-S.webp",
+    "images/logo/BOOMERANG-LOGO-FIN-M.webp",
+    "images/logo/BOOMERANG-LOGO-FIN-W.webp",
+    "images/temp-bg.webp",
+    "images/temp-bg-m.webp",
 ];
 
 self.addEventListener("install", installEvent => {
