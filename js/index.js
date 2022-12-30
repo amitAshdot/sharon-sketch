@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var data = $(this).serialize();
             $.ajax({
                 type: "POST",
-                url: 'mail.php',
+                url: 'https://forms.un-static.com/forms/162a433291d2f61014e12b3c1d823d7b33c2114c',
                 data: data,
                 success: function (mail) {
                     window.location.href = 'thanks.html';
@@ -202,32 +202,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // -----START CAROUSEL-----
-    $(".slider").slick({
-        infinite: false,
-        rtl: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        responsive: [
-            //     {
-            //     breakpoint: 1024,
-            //     settings: {
-            //         slidesToShow: 3,
-            //         infinite: true
-            //     }
-            // },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true
-                }
-            }, {
-                breakpoint: 300,
-                settings: "unslick" // destroys slick
-            }]
-    });
+    // $(".slider").slick({
+    //     infinite: false,
+    //     rtl: true,
+    //     infinite: true,
+    //     centerMode: true,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 2,
+    //     responsive: [
+    //         //     {
+    //         //     breakpoint: 1024,
+    //         //     settings: {
+    //         //         slidesToShow: 3,
+    //         //         infinite: true
+    //         //     }
+    //         // },
+    //         {
+    //             breakpoint: 600,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 dots: true
+    //             }
+    //         }, {
+    //             breakpoint: 300,
+    //             settings: "unslick" // destroys slick
+    //         }]
+    // });
 
     // -----END CAROUSEL-----
 
