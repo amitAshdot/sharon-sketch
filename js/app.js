@@ -251,6 +251,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 breakpoint: 300,
                 settings: "unslick" // destroys slick
             }]
+    }).on('setPosition', function (event, slick) {
+        slick.$slides.css('height', slick.$slideTrack.height() + 'px');
     });
 
     // -----END CAROUSEL-----
