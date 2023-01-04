@@ -233,6 +233,8 @@ document.addEventListener("DOMContentLoaded", function () {
         centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             //     {
             //     breakpoint: 1024,
@@ -251,9 +253,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 breakpoint: 300,
                 settings: "unslick" // destroys slick
             }]
-    }).on('setPosition', function (event, slick) {
-        slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-    });
+    })
+    // .on('setPosition', function (event, slick) {
+    //     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+    // });
 
     // -----END CAROUSEL-----
 

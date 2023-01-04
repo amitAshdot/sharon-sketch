@@ -205,6 +205,8 @@ img.slick-slide {
     width: 100%;
     height: auto;
     object-fit: cover;
+    height: inherit !important;
+    max-height: 600px;
 }
 
 .slide {
@@ -215,8 +217,4 @@ img.slick-slide {
     display: flex !important;
     margin-bottom: 0;
     object-fit: cover;
-}
-
-.slick-slide {
-    height: inherit !important;
 }
