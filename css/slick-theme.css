@@ -198,3 +198,9 @@
     opacity: .75;
     color: black;
 }
+
+img.slick-slide {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
