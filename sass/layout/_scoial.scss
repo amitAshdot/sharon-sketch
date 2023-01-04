@@ -6,6 +6,8 @@
     width: 3rem;
     height: 3rem;
     position: relative;
+    display: flex;
+    align-self: center;
 
     @include respond(tab-port) {
         font-size: 1.5rem;

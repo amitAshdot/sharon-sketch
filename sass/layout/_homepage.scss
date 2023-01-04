@@ -15,6 +15,7 @@
 
   @include respond(tab-port) {
     height: $header-height-mobile;
+    justify-content: space-around;
   }
 
   &.sticky {
