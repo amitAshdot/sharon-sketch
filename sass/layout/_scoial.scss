@@ -1,0 +1,22 @@
+.fa-instagram {
+    background: $color-primary;
+    color: white;
+    border-radius: 50%;
+
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+
+    @include respond(tab-port) {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+}
