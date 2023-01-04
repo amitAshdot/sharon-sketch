@@ -257,11 +257,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // -----START SCROLL TO ELEMENT-----
     const scrollToElement = (element) => {
-        // const elementDetails = element.getBoundingClientRect();
-        // const elementPosition = elementDetails.top;
-        // const offsetPosition = elementPosition - 100;
-        // let t = window.pageYOffset
-        window.scrollTo({ top: 5000, behavior: "smooth" });
+
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
     }
     // -----END SCROLL TO ELEMENT-----
     document.getElementById("popup-btn").addEventListener("click", function (e) {
