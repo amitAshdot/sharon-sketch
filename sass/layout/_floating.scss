@@ -10,6 +10,10 @@
         right: -1rem;
         overflow: visible;
 
+        @include respond(tab-port) {
+            bottom: -5rem;
+        }
+
         & .circle-border {
             &-left {
                 border: 1px solid;
@@ -23,27 +27,27 @@
     }
 }
 
-.floating.about-triangle {
-    position: relative;
-    overflow: visible;
-    height: 0rem;
+// .floating.about-triangle {
+//     position: relative;
+//     overflow: visible;
+//     height: 0rem;
 
-    & img {
-        width: 10rem;
-        height: auto;
-        position: absolute;
-        top: -60px;
-    }
+//     & img {
+//         width: 10rem;
+//         height: auto;
+//         position: absolute;
+//         top: -60px;
+//     }
 
-    & .triangle {
-        position: absolute;
-        bottom: -19rem;
-        right: 15rem;
-        width: 0;
-        height: 0;
-        border-left: 4rem solid transparent;
-        border-right: 4rem solid transparent;
-        border-top: 7rem solid $color-secondary;
-        transform: rotate(45deg);
-    }
-}
+//     & .triangle {
+//         position: absolute;
+//         bottom: -19rem;
+//         right: 15rem;
+//         width: 0;
+//         height: 0;
+//         border-left: 4rem solid transparent;
+//         border-right: 4rem solid transparent;
+//         border-top: 7rem solid $color-secondary;
+//         transform: rotate(45deg);
+//     }
+// }

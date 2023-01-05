@@ -78,6 +78,13 @@
     .btn-container {
         margin: unset;
         align-self: center;
+        transition: all 0.2s;
+
+        @include respond(tab-port) {
+            &:hover>.btn {
+                transform: translate(0.5rem, 0.5rem);
+            }
+        }
     }
 
     &-submit {
@@ -94,6 +101,7 @@
         top: -0.5rem;
         right: 0.5rem;
         border-radius: 1rem;
+        transition: all 0.2s;
 
         @include respond(tab-port) {
             width: 100%;

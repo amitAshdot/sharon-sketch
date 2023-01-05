@@ -49,10 +49,14 @@
             // @include respond(tab-port) {
             //     width: 12rem;
             // }
+            &:hover>.btn {
+                transform: translate(-0.5rem, 0.5rem);
+            }
         }
 
         & a {
             overflow: hidden;
+            transition: all 0.2s;
 
             @include respond(tab-port) {
                 top: -0.5rem;

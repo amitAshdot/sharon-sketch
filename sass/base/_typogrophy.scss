@@ -55,8 +55,15 @@ body {
     width: 8rem;
     height: 3rem;
     margin: auto;
+
     // pointer-events: none;
-    overflow: visible
+    overflow: visible;
+
+    @include respond(tab-port) {
+      &:hover>a {
+        transform: translate(0.5rem, 0.5rem);
+      }
+    }
   }
 
   // border-radius: 20rem;
