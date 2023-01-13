@@ -1,5 +1,6 @@
 @mixin inputBasic {
-  font-family: "adoveFnt22";
+  font-family: "adoveFnt22", sans-serif;
+  // font-family: "simpler", sans-serif;
   height: 4rem;
   border: none;
   border-radius: 0rem;
@@ -25,7 +26,8 @@
 }
 
 @mixin submitBasic($color) {
-  font-family: "adoveFnt22-bold";
+  font-family: "adoveFnt22-bold", sans-serif;
+  // font-family: "simpler", sans-serif;
   position: relative;
   height: 4rem;
   border: none;
@@ -56,6 +58,7 @@
   text-align: center;
   font-size: 1.125rem;
   font-family: "adoveFnt22", sans-serif;
+  // font-family: "simpler", sans-serif;
   align-items: center;
   cursor: pointer;
   // position: relative;

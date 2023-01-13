@@ -167,11 +167,16 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             var form = document.getElementById("form");
 
-            // var data = $(this).serialize();
-            var data = new FormData(e.target);
+            // var data = new FormData(e.target);
+            var data = $(this).serialize();
+            data.append('name', $(this).val());
+            data.append('phone', $(this).val());
+            data.append('email', $(this).val());
+
             fetch(e.target.action, {
                 method: form.method,
                 body: data,
+                url: 'https://boomerang.fit/mail.php',
                 headers: {
                     'Accept': 'application/json'
                 }
@@ -181,9 +186,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                            console.log('סבתא שלך')
+                            // status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                         } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
+                            console.log('222סבתא שלך')
+
+                            // status.innerHTML = "Oops! There was a problem submitting your form"
                         }
                     })
                 }
@@ -192,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             // $.ajax({
             //     type: "POST",
-            //     url: 'https://forms.un-static.com/forms/162a433291d2f61014e12b3c1d823d7b33c2114c',
+            //     url: 'https://boomerang.fit/mail.php',
             //     data: data,
             //     success: function (mail) {
             //         window.location.href = 'thanks.html';
@@ -236,13 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
         autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
-            //     {
-            //     breakpoint: 1024,
-            //     settings: {
-            //         slidesToShow: 3,
-            //         infinite: true
-            //     }
-            // },
             {
                 breakpoint: 600,
                 settings: {
