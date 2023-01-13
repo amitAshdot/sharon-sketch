@@ -161,22 +161,6 @@
                 overflow: hidden;
             }
         }
-
-        &-grades {
-            display: flex;
-        }
-
-        &-grade {
-            background: $color-primary;
-            color: $color-black;
-            border-radius: 50%;
-            width: 2rem;
-            height: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
-        }
     }
 
     &-text {
@@ -300,24 +284,6 @@
                 @include respond(tab-port) {
                     line-height: 1.8rem;
                 }
-            }
-
-            &-grades {
-                display: flex;
-            }
-
-            &-grade {
-
-                background: $color-primary;
-                color: $color-black;
-                border-radius: 50%;
-                width: 2rem;
-                height: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.2rem;
-
             }
         }
 
