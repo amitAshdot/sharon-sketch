@@ -56,6 +56,11 @@
     z-index: 1;
     transition: all 0.2s;
 
+    @include respond(tab-port) {
+        // bottom: -1rem;
+        // left: 1rem;
+    }
+
     &>* {
         overflow: hidden;
         cursor: pointer;
@@ -66,7 +71,17 @@
         left: -1rem;
     }
 
-    &#first {}
+    // &#first {
+    //     &.show-on-scroll {
+    //         transform: translateY(0%);
+    //         transform: translateX(110%);
+    //         transition: all 0.5s 0.3s;
+
+    //         &.is-visible {
+    //             transform: translateX(0%);
+    //         }
+    //     }
+    // }
 
     &#second {
         background: $color-secondary;
@@ -145,22 +160,6 @@
                 line-height: 1.8rem;
                 overflow: hidden;
             }
-        }
-
-        &-grades {
-            display: flex;
-        }
-
-        &-grade {
-            background: $color-primary;
-            color: $color-black;
-            border-radius: 50%;
-            width: 2rem;
-            height: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2rem;
         }
     }
 
@@ -285,24 +284,6 @@
                 @include respond(tab-port) {
                     line-height: 1.8rem;
                 }
-            }
-
-            &-grades {
-                display: flex;
-            }
-
-            &-grade {
-
-                background: $color-primary;
-                color: $color-black;
-                border-radius: 50%;
-                width: 2rem;
-                height: 2rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.2rem;
-
             }
         }
 
