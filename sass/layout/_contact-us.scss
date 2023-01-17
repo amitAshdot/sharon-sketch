@@ -92,7 +92,6 @@
     &-submit {
         // @include global-btn(white, $color-primary-light, white);
         // @include global-btn($color-black, $color-primary, $color-black);
-        // @include submitBasic($color-primary-light);
         // @include shine($color-primary-light);
 
         text-align: center;
@@ -105,13 +104,24 @@
         border-radius: 1rem;
         transition: all 0.2s;
 
+        @include global-btn(black, $color-primary, black);
+        @include submitBasic($color-primary);
+
         @include respond(tab-port) {
             width: 100%;
+
+            &:hover {
+                top: 0rem;
+                right: 0rem;
+                color: $color-black;
+            }
         }
 
-        // &:hover {
-        //     @include buttonHover;
-        // }
+        &:hover {
+            top: 0rem;
+            right: 0rem;
+            color: $color-black;
+        }
     }
 
 }
