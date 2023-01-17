@@ -207,7 +207,7 @@
             height: 60%;
             padding: 3rem;
             border-radius: 1rem;
-            z-index: 15;
+            z-index: 20;
             // text-align: center;
             justify-content: space-evenly;
 
@@ -223,19 +223,19 @@
 
         &#first {
             &-hidden {
-                z-index: 10;
+                z-index: 20;
             }
         }
 
         &#second {
             &-hidden {
-                z-index: 10;
+                z-index: 20;
             }
         }
 
         &#third {
             &-hidden {
-                z-index: 10;
+                z-index: 20;
             }
         }
 

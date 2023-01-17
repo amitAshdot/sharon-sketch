@@ -617,7 +617,7 @@ body {
   height: 60%;
   padding: 3rem;
   border-radius: 1rem;
-  z-index: 15;
+  z-index: 20;
   justify-content: space-evenly;
 }
 @media only screen and (max-width: 58.75em) {
@@ -629,13 +629,13 @@ body {
   }
 }
 .lesson-hidden#first-hidden {
-  z-index: 10;
+  z-index: 20;
 }
 .lesson-hidden#second-hidden {
-  z-index: 10;
+  z-index: 20;
 }
 .lesson-hidden#third-hidden {
-  z-index: 10;
+  z-index: 20;
 }
 .lesson-hidden-cta {
   display: flex;
