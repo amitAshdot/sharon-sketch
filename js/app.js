@@ -1,13 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     var headers = new Headers();
     headers.append('Service-Worker-Allowed', '/');
-    // console.log(headers.get('Service-Worker-Allowed'));
-
     if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
-            navigator.serviceWorker
-                .register("sw.js")
-                // .then(res => console.log("service worker registered"))
+            navigator.serviceWorker.register("sw.js")
                 .catch(err => console.log("service worker not registered", err))
         })
     }
@@ -198,32 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }).catch(error => {
                 console.log(error)
             })
-            // $.ajax({
-            //     type: "POST",
-            //     url: 'https://boomerang.fit/mail.php',
-            //     data: data,
-            //     success: function (mail) {
-            //         window.location.href = 'thanks.html';
-            //     }
-            // });
 
-
-            // console.log(data)
-            // $.ajax({
-            //     type: "POST",
-            //     url: 'https://app.powerlink.co.il/web/webtoaccount.aspx',
-            //     data: data,
-            //     success: function (answer) {
-            //         $.ajax({
-            //             type: "POST",
-            //             url: 'mail.php',
-            //             data: data,
-            //             success: function (mail) {
-            //                 window.location.href = 'thanks.html';
-            //             }
-            //         });
-            //     }
-            // });
             return true
         } else {
             e.preventDefault();
@@ -255,10 +226,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 settings: "unslick" // destroys slick
             }]
     })
-    // .on('setPosition', function (event, slick) {
-    //     slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-    // });
-
     // -----END CAROUSEL-----
 
     // -----START SCROLL TO ELEMENT-----
