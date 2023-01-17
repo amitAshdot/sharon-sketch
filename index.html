@@ -68,7 +68,7 @@
           עם קהילה חזקה וטובה של מתאמנים
         </h1>
         <div class="btn-container">
-          <a href="#form" class="btn" target="">הרשמה לשעור ניסיון</a>
+          <a href="#third" class="btn" target="">הרשמה לשעור ניסיון</a>
           <div class="u-fake-border u-round"></div>
         </div>
       </div>
@@ -92,7 +92,7 @@
           אז שריינו לעצמכם שיעור ותגיעו, כל השאר עלינו.
         </p>
         <div class="about-cta show-on-scroll">
-          <a class="about-cta-btn btn" href="#form">בואו ניפגש</a>
+          <a class="about-cta-btn btn" href="#third">בואו ניפגש</a>
           <div class="u-fake-border u-round"></div>
         </div>
       </div>
@@ -132,7 +132,7 @@
               </p>
 
               <div class="lesson-hidden-cta">
-                <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <a class="lesson-hidden-btn btn" href="#third">בואו ניפגש</a>
                 <div class="u-fake-border u-round"></div>
               </div>
             </div>
@@ -163,7 +163,7 @@
               </p>
 
               <div class="lesson-hidden-cta">
-                <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <a class="lesson-hidden-btn btn" href="#third">בואו ניפגש</a>
                 <div class="u-fake-border u-round"></div>
               </div>
             </div>
@@ -195,7 +195,7 @@
               </p>
 
               <div class="lesson-hidden-cta">
-                <a class="lesson-hidden-btn btn" href="#form">בואו ניפגש</a>
+                <a class="lesson-hidden-btn btn" href="#third">בואו ניפגש</a>
                 <div class="u-fake-border u-round"></div>
               </div>
             </div>
@@ -296,7 +296,7 @@
           <div class="popup-title">לרגל ההשקה - מבצע חבר מביא חבר</div>
           <div class="popup-text">רוצים להאמן ביחד עם חבר? בואו ביחד לאימון איתנו ותקבלו 2 שיעורים חינם.</div>
           <div class="btn-container">
-            <a href="#form" class="popup-btn btn" id="popup-btn">להרשמה</a>
+            <a href="#third" class="popup-btn btn" id="popup-btn">להרשמה</a>
             <div class="u-fake-border u-round"></div>
           </div>
         </div>

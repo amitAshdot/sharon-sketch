@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hideLesson();
     });
     $(".lesson-hidden-btn").click(function (e) {
-        let element = document.getElementById("form");
+        let element = document.getElementById("first");
         scrollToElement(element);
         hideLesson();
     })
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // document.getElementById("popup-btn").addEventListener("click", function (e) {
     //     e.preventDefault();
-    //     let element = document.getElementById("form");
+    //     let element = document.getElementById("third");
     //     scrollToElement(element);
     //     document.getElementById("popup").style.display = "none";
     // }
