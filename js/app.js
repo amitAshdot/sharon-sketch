@@ -237,25 +237,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     // -----END SCROLL TO ELEMENT-----
-    document.getElementById("popup-btn").addEventListener("click", function (e) {
-        e.preventDefault();
-        let element = document.getElementById("form");
-        scrollToElement(element);
-        document.getElementById("popup").style.display = "none";
-    }
-    );
+
+
+    // document.getElementById("popup-btn").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     let element = document.getElementById("form");
+    //     scrollToElement(element);
+    //     document.getElementById("popup").style.display = "none";
+    // }
+    // );
     // ----- CLOSING POPUP -----
-    document.getElementById("popup-exit").addEventListener("click", function (e) {
-        e.preventDefault();
-        document.getElementById("popup").style.display = "none";
-    });
+    // document.getElementById("popup-exit").addEventListener("click", function (e) {
+    //     e.preventDefault();
+    //     document.getElementById("popup").style.display = "none";
+    // });
     // ----- CLOSING POPUP -----
 
     // ----- START SHOWING POPUP -----
-    setTimeout(() => {
-        document.getElementById("popup").style.display = "block";
+    // setTimeout(() => {
+    //     document.getElementById("popup").style.display = "block";
 
-    }, 5000)
+    // }, 5000)
     // ----- END SHOWING POPUP -----
 
 
