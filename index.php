@@ -32,9 +32,10 @@
   <meta name="twitter:description" content="Pilates Fitness & More With Sharon & Aya" />
   <meta name="twitter:image" content="./images/logo1.jpeg" />
 
-  <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen" />
   <meta name="theme-color" content="#94b4a9">
-  <link rel="stylesheet" href="./css/base/awesome.css">
+
+  <link rel="stylesheet" type="text/css" href="./css-new/index.css" media="screen" />
+  <link rel="stylesheet" href="./css-new/base/awesome.css">
 </head>
 
 <body>
@@ -64,11 +65,11 @@
 
       <div class="top-container">
         <h1>
-          בית לתנועה בלתי פוסקת<br>
-          עם קהילה חזקה וטובה של מתאמנים
+          NEW STUDIO IN TOWN
+          <span>BOOMERANG</span>
         </h1>
         <div class="btn-container">
-          <a href="#third" class="btn" target="">הרשמה לשעור ניסיון</a>
+          <a href="#third" class="btn" target="">בואו להכיר אותנו</a>
           <div class="u-fake-border u-round"></div>
         </div>
       </div>
@@ -86,10 +87,11 @@
       <div class="about-left">
         <h2 class="about-title ">נעים להכיר</h2>
         <p class="about-text ">
-          בומרנג הוא סטודיו עם אווירה של בית, יש בו מגוון שיעורי פילאטיס מכשירים, פיט ותחנות.
+          בומרנג הוא סטודיו לפילאטיס מכשירים בקבוצות קטנות עם יחס אישי ואווירה בועטת.</br>
 
-          הסטודיו כולו מעוצב עבורכם. חשוב לנו שתגיעו בכיף גדול להתאמן.
-          אז שריינו לעצמכם שיעור ותגיעו, כל השאר עלינו.
+          הסטודיו פעיל כל ימות השבוע עם מגוון שיעורים מאתגרים וחווייתיים, כדי שיגרמו לכם לחכות כל היום לשיעור וישאירו
+          לכם טעם של
+          עוד.
         </p>
         <div class="about-cta show-on-scroll">
           <a class="about-cta-btn btn" href="#third">בואו ניפגש</a>
@@ -125,10 +127,9 @@
             <div class="lesson-hidden-exit">X</div>
             <div class="lesson-hidden-right">
               <h3 class="lesson-hidden-right-title">שיעורי פילאטיס מכשרים</h3>
-              <p class="lesson-hidden-text">פילאטיס הוא אימון המפתח את הגוף באופן מאוזן ושווה, מתקן יציבה לקויה,
-                משמר את חיות וחיוניות הגוף.
-                הפילאטיס פונה אל הגוף כמכלול ומעודד אורח חיים בריא, כדי שהגוף יוכל לבצע בקלות וביעלות את כל הפעולות
-                היומיומיות.
+              <p class="lesson-hidden-text">פילאטיס הוא אימון המפתח את הגוף באופן מאוזן ושווה, מתקן יציבה לקויה, משמר את
+                חיות וחיוניות הגוף. תוכלו לפגוש בסטודיו
+                אימוני פילאטיס בשיטה הקלאסית וגם אימונים מודרניים.
               </p>
 
               <div class="lesson-hidden-cta">
@@ -158,8 +159,9 @@
             <div class="lesson-hidden-exit">X</div>
             <div class="lesson-hidden-right">
               <h3 class="lesson-hidden-right-title">שיעורי FIT</h3>
-              <p class="lesson-hidden-text">שיעור פילאטיס מכשירים המשלב תרגילים מעולם הפונקציונלי.
-                שיעור בקצב מהיר, בדופק גבוה עם מוזיקה ואווירה מלאת אדרנלין.
+              <p class="lesson-hidden-text">שיעור פילאטיס מכשירים המשלב תרגילים מעולם הפונקציונלי. שיעור בקצב מהיר,
+                בדופק גבוה עם מוזיקה ואווירה מלאת אדרנלין.
+                השיעור מתאים למתאמנים שמכירים את מיטת הפילאטיס ומעוניינים לצאת מאזור הנוחות.
               </p>
 
               <div class="lesson-hidden-cta">
@@ -189,9 +191,12 @@
             <div class="lesson-hidden-exit">X</div>
             <div class="lesson-hidden-right">
               <h3 class="lesson-hidden-right-title">שיעורי תחנות</h3>
-              <p class="lesson-hidden-text">שיעור שעובדים בו לפי זמני השעון.
-                בכל תחנה תפגשו תרגיל ואביזר שונה, כל השיעור מלווה במוזיקה קצבית.
+              <p class="lesson-hidden-text">
+                שיעור דינאמי המוכתב לפי זמני השעון ומלווה במוזיקה קצבית. שיעור עם מגוון אביזרים ותרגילים הפונים לגוף
+                כמכלול כדי שהגוף
+                יוכל לבצע בקלות וביעלות את כל פעולות היומיום.</br>
                 השיעור מתאים לכל רמות המתאמן וכולם יכולים למצוא מקום בשיעור.
+
               </p>
 
               <div class="lesson-hidden-cta">
@@ -225,6 +230,16 @@
         <label id="emaillabel" for="email">אימייל</label>
         <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
           class="form-input show-on-scroll">
+
+        <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
+
+        <select name="time" id="time" class="form-input show-on-scroll">
+          <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
+          <option value="8:00-10:00">8:00-10:00</option>
+          <option value="14:00-16:00">14:00-16:00</option>
+          <option value="16:00-18:00">16:00-18:00</option>
+          <option value="18:00-20:00">18:00-20:00</option>
+        </select>
 
         <div class="btn-container show-on-scroll">
           <input type="submit" value="שלח" class="form-submit btn g-recaptcha" data-sitekey="reCAPTCHA_site_key"
@@ -289,12 +304,12 @@
     <!-- CTA BTN END-->
 
     <!-- POPUP START-->
-    <!-- <div class="popup" id="popup">
+    <div class="popup" id="popup">
       <div class="popup-container">
         <div class="popup-exit" id="popup-exit">X</div>
         <div class="popup-right">
-          <div class="popup-title">לרגל ההשקה - מבצע חבר מביא חבר</div>
-          <div class="popup-text">רוצים להאמן ביחד עם חבר? בואו ביחד לאימון איתנו ותקבלו 2 שיעורים חינם.</div>
+          <div class="popup-title">מבצע השקה לרגל הפתיחה</div>
+          <div class="popup-text">שיעורי מתנה בכל רכישת כרטיסייה</div>
           <div class="btn-container">
             <a href="#third" class="popup-btn btn" id="popup-btn">להרשמה</a>
             <div class="u-fake-border u-round"></div>
@@ -310,7 +325,7 @@
           </picture>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- POPUP END -->
   </main>
   <footer class=" footer">
