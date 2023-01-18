@@ -1,35 +1,24 @@
-<?
- $recepient = "amitashdot@gmail.com";
+<?PHP
+$email = $_POST["email"];
+$name = $_POST["name"];
+$phone = $_POST["phone"];
 
-$name = trim($_POST["name"]);
-$text_2 = trim($_POST["phone"]);
-$email = trim($_POST["email"]);
-
+$to = "amitashdot@gmail.com";
+$subject = "כההההה, יש ליד חדש";
+$headers = "From: no-reply@boomerang.fit\n";
 $message = " \n כהההה, מישהו רוצה לשמוע על האימונים\r\n<br>
-שם: $text_1 \r\n  </br>
-
-טלפון: $text_2 \r\n </br>
-
-email: $text_3 \r\n </br>
+שם: $name \r\n  
+טלפון: $phone \r\n
+email: $email \r\n
 
 בהצלחה!
 ";
 
-$to "amitashdot@gmail.com"
-$pagetitle = "כהההה, מישהו רוצה לשמוע על האימונים";
-$headers = "Content-Type: text/html; charset=UTF-8";
-$from = "postmaster@boomerang.fit";
-header("Location: https://boomerang.fit/thank-you");
-// mail($recepient, $pagetitle, $message, $headers,$from);
-$mymessage = quoted_printable_encode($message);
+$user = "web@livnes.com";
+$usersubject = "כהההה";
+$userheaders = "From: no-reply@boomerang.fit\n";
+$usermessage = "תודה פשוש";
 
-function mail_utf8($to, $subject = 'מישהו רוצה לשמוע על האימונים', $message = '', $from ='') { 
-  $headers = "MIME-Version: 1.0\r\n";
-  $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-  $headers .= "Content-Transfer-Encoding: quoted-printable\r\n";
-  $headers .= "From: $from\r\n";
-  mail($to, $subject, $message, $headers, $from);  
-}
-mail_utf8 ($recepient, $pagetitle, $mymessage , $from);
-
+mail($to,$subject,$message,$headers); //send to Sharon&Aya
+mail($user,$usersubject,$usermessage,$userheaders); //send to user
 ?>

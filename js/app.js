@@ -162,20 +162,18 @@ document.addEventListener("DOMContentLoaded", function () {
         if (validateForm()) {
             e.preventDefault();
             var form = document.getElementById("form");
-
-            // var data = new FormData(e.target);
-            // var data = $(this).serialize();
-            // data.append('name', $(this).val());
-            // data.append('phone', $(this).val());
-            // data.append('email', $(this).val());
-            debugger
             var formData = $(form).serialize(); //serialize this particular form
+            // alert(formData)
             $.ajax({
                 type: 'POST',
-                // url: $(form).attr('action'), //get value from forms action attrbute
-                url: '../mail.php', //get value from forms action attrbute
-                data: formData
+                url: '../mail.php',
+                data: formData,
+                success: function (e) {
+                    debugger
+                    window.location = "thank-you.html";
+                }
             }).done(function (response) {
+                console.log(response);
 
             });
             return true
