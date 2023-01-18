@@ -4,7 +4,7 @@
     // overflow: hidden;
     gap: 1rem;
 
-    @include respond(tab-port) {
+    @include respond(mini-desktop) {
         flex-direction: column;
         gap: 3rem;
     }
@@ -20,7 +20,7 @@
         // border: 1px solid green;
 
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             padding-inline: 1rem;
         }
     }
@@ -31,7 +31,7 @@
         overflow: hidden;
         margin-block-end: 2rem;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             font-size: 2.2rem;
             line-height: 2.5rem;
         }
@@ -56,7 +56,7 @@
     z-index: 1;
     transition: all 0.2s;
 
-    @include respond(tab-port) {
+    @include respond(mini-desktop) {
         // bottom: -1rem;
         // left: 1rem;
     }
@@ -89,7 +89,7 @@
         top: -4rem;
         width: 95%;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 100%;
             left: -1rem;
             top: 0;
@@ -100,7 +100,7 @@
         background: $color-primary;
         left: -1rem;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             left: 1rem;
             top: -4rem;
         }
@@ -122,7 +122,7 @@
             transform: translate(-0.5rem, 1.3rem);
             width: 100%;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 transform: translate(1rem, -0.7rem);
             }
         }
@@ -130,12 +130,12 @@
         &:hover>#third {
             transform: translate(1rem, -1.5rem);
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 transform: translate(-1rem, 1.2rem);
             }
         }
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 90%;
             text-align: center;
             margin: auto;
@@ -147,7 +147,7 @@
         justify-content: center;
         cursor: pointer;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             justify-content: center;
         }
 
@@ -155,7 +155,7 @@
             font-size: 2rem;
             cursor: pointer;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 font-size: 1.5rem;
                 line-height: 1.8rem;
                 overflow: hidden;
@@ -170,7 +170,7 @@
         &-short {
             cursor: pointer;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 font-size: 1rem;
                 line-height: 1.5rem;
             }
@@ -211,7 +211,7 @@
             // text-align: center;
             justify-content: space-evenly;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 flex-direction: column;
                 // padding: 1.5rem;
                 padding: 2.5rem 1rem 1rem;
@@ -242,7 +242,7 @@
         &-cta {
             display: flex;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 &:hover>a {
                     transform: translate(0.5rem, 0.5rem);
                 }
@@ -268,7 +268,7 @@
             gap: 2rem;
             align-items: center;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -281,7 +281,7 @@
                 text-align: center;
                 line-height: 1.2rem;
 
-                @include respond(tab-port) {
+                @include respond(mini-desktop) {
                     line-height: 1.8rem;
                 }
             }
@@ -290,7 +290,7 @@
         &-text {
             line-height: 1.2;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 font-size: 1rem;
                 line-height: 1.5rem;
             }
@@ -310,7 +310,7 @@
             width: 12rem;
             overflow: visible;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 margin-top: 1rem;
                 width: 9rem;
                 height: 3rem;

@@ -5,7 +5,7 @@
         margin-block: 10rem;
         overflow: hidden;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             padding-inline: 1rem;
             margin-block: 1rem;
         }
@@ -27,13 +27,13 @@
     // flex-direction: column;
     margin-top: 0rem;
     // margin-inline-start: 8rem;
-    padding-inline: 5rem;
+    padding-inline: 1rem;
     // border: 1px solid red;
     // overflow: hidden;
     position: relative;
     overflow: visible;
 
-    @include respond(tab-port) {
+    @include respond(mini-desktop) {
         flex-direction: column;
         padding-inline: 1rem;
         margin-block: 1rem;
@@ -56,11 +56,11 @@
 
     &-input {
         @include inputBasic;
-        width: 20%;
-        color: $color-primary-dark;
+        width: 15%;
+        // color: $color-primary-dark;
         border-bottom: 1px solid;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 100%;
         }
 
@@ -77,17 +77,24 @@
         }
     }
 
+    select {
+        option {
+            color: $color-black;
+        }
+    }
+
     .btn-container {
         margin: unset;
         align-self: center;
         transition: all 0.2s;
 
-        @include respond(tab-port) {
-            &:hover>.btn {
-                transform: translate(0.5rem, 0.5rem);
-            }
-        }
+        // @include respond(mini-desktop) {
+        //     &:hover>.btn {
+        //         transform: translate(0.5rem, 0.5rem);
+        //     }
+        // }
     }
+
 
     &-submit {
         // @include global-btn(white, $color-primary-light, white);
@@ -109,7 +116,7 @@
         @include global-btn(black, $color-primary, black);
         @include submitBasic($color-primary);
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 100%;
 
             &:hover {

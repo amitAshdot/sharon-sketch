@@ -6,7 +6,7 @@
         margin-block-start: $header-height;
 
         // border: 1px solid red;
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             // min-height: 100vh;
             margin-block-start: $header-height-mobile;
         }
@@ -31,16 +31,23 @@
         padding: 3rem;
         border-radius: 1rem;
 
-        @include respond(tab-port) {
-            margin: 1rem 1rem;
-            padding: 1rem;
-            font-size: 1rem;
-            line-height: 1.7rem;
-        }
+
 
         & h1 {
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.56rem;
+
+            span {
+                font-size: 5.56rem;
+                line-height: 6rem;
+            }
         }
+
+
 
         & .btn-container {
             margin: 1rem auto 0;
@@ -52,7 +59,7 @@
 
             }
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 &:hover>.btn {
                     transform: translate(-0.5rem, 0.5rem);
 
@@ -64,7 +71,7 @@
             overflow: hidden;
             transition: all 0.2s;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 top: -0.5rem;
                 right: -0.5rem;
             }
@@ -75,8 +82,24 @@
             object-fit: contain;
             height: auto;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 width: 80%;
+            }
+        }
+
+        @include respond(mini-desktop) {
+            margin: 1rem 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            line-height: 1.7rem;
+
+            & h1 {
+                font-size: 1.56rem;
+
+                span {
+                    font-size: 2.56rem;
+                    line-height: 3rem;
+                }
             }
         }
     }

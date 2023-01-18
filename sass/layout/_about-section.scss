@@ -8,7 +8,7 @@
         overflow: visible;
         // border: 1px solid blue;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             flex-direction: column;
         }
     }
@@ -19,7 +19,7 @@
         width: 50%;
         overflow: hidden;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 100%;
         }
 
@@ -29,7 +29,7 @@
             object-fit: cover;
             border-radius: 1rem 0 0 1rem;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 border-radius: 0;
             }
         }
@@ -39,7 +39,7 @@
         width: 50%;
         padding: 2rem 3rem;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             width: 100%;
             padding: 1rem;
             overflow: hidden;
@@ -50,7 +50,7 @@
             text-align: center;
             overflow: hidden;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 font-size: 2.2rem;
                 line-height: 2.5rem;
             }
@@ -61,7 +61,7 @@
             line-height: 2.5rem;
             margin-block: 2rem;
 
-            @include respond(tab-port) {
+            @include respond(mini-desktop) {
                 font-size: 1.2rem;
                 line-height: 1.5rem;
                 margin-block: 1rem;
@@ -81,7 +81,7 @@
         height: 4rem;
         overflow: visible;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             margin-block: 1rem;
 
             &:hover>a {

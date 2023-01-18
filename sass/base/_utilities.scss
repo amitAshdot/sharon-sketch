@@ -1,5 +1,5 @@
 .u-desktop {
-  @include respond(phone-small) {
+  @include respond(mini-desktop) {
     display: none !important;
   }
 }
@@ -7,7 +7,7 @@
 .u-mobile {
   display: none !important;
 
-  @include respond(phone-small) {
+  @include respond(mini-desktop) {
     display: inherit !important;
   }
 }

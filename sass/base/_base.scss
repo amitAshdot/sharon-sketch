@@ -27,7 +27,7 @@ html {
   }
 
 
-  @include respond(tab-port) {
+  @include respond(mini-desktop) {
     font-size: 50%; // 1rem = 8px, 8 / 16 = 50%
     font-size: calc(100vw * 0.04444444);
   }
@@ -39,7 +39,7 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 
-  @include respond(tab-port) {
+  @include respond(mini-desktop) {
     // padding: 0;
   }
 }

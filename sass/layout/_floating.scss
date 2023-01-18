@@ -10,7 +10,7 @@
         right: -1rem;
         overflow: visible;
 
-        @include respond(tab-port) {
+        @include respond(mini-desktop) {
             bottom: -5rem;
         }
 

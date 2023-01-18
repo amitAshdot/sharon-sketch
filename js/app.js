@@ -114,6 +114,16 @@ document.addEventListener("DOMContentLoaded", function () {
         root.style.setProperty('--currentColorDark', window.getComputedStyle(lesson).backgroundColor);
     }
     //------END LESSON-----
+
+    // -----START CHANGING INPUT COLOR SELECT-----
+    // $("select").change(function (e) {
+    //     debugger
+    //     if (jQuery(this).children('option:first-child').is(':selected')) {
+    //         $(this).css('color', 'black')
+    //     } else {
+    //         $(this).css('color', 're#94b4a9')
+    //     }
+    // })
     // -----START EMAIL VALIDATION-----
     const isNumberKey = (evt) => {
         let charCode = (evt.which) ? evt.which : evt.keyCode

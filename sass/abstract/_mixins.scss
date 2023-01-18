@@ -5,7 +5,7 @@
   border: none;
   border-radius: 0rem;
   margin: 0.7rem 0;
-  padding: 0 2rem;
+  padding: 0 0.5rem 0 0;
   font-size: 1.5rem;
 
   @include respond(tab-port) {
@@ -23,6 +23,10 @@
   // @include respond(phone-small) {
   //   margin: 0.8rem;
   // }
+
+  &:focus {
+    color: $color-primary;
+  }
 }
 
 @mixin submitBasic($color) {
@@ -42,7 +46,7 @@
 
   transition: all 0.5s;
 
-  @include respond(tab-port) {
+  @include respond(mini-desktop) {
     font-size: 1rem;
     padding: 0 1rem;
     // height: 2rem;
