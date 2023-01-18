@@ -164,37 +164,20 @@ document.addEventListener("DOMContentLoaded", function () {
             var form = document.getElementById("form");
 
             // var data = new FormData(e.target);
-            var data = $(this).serialize();
-            data.append('name', $(this).val());
-            data.append('phone', $(this).val());
-            data.append('email', $(this).val());
+            // var data = $(this).serialize();
+            // data.append('name', $(this).val());
+            // data.append('phone', $(this).val());
+            // data.append('email', $(this).val());
+            debugger
+            var formData = $(form).serialize(); //serialize this particular form
+            $.ajax({
+                type: 'POST',
+                // url: $(form).attr('action'), //get value from forms action attrbute
+                url: '../mail.php', //get value from forms action attrbute
+                data: formData
+            }).done(function (response) {
 
-            fetch(e.target.action, {
-                method: form.method,
-                body: data,
-                url: 'https://boomerang.fit/mail.php',
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    form.reset()
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            console.log('סבתא שלך')
-                            // status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            console.log('222סבתא שלך')
-
-                            // status.innerHTML = "Oops! There was a problem submitting your form"
-                        }
-                    })
-                }
-            }).catch(error => {
-                console.log(error)
-            })
-
+            });
             return true
         } else {
             e.preventDefault();
