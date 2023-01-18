@@ -1,4 +1,14 @@
 <?PHP
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require './php/src/Exception.php';
+require './php/src/PHPMailer.php';
+require './php/src/SMTP.php';
+
+
+
 $email = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
@@ -14,7 +24,7 @@ email: $email \r\n
 בהצלחה!
 ";
 
-$user = "web@livnes.com";
+$user = $email;
 $usersubject = "כהההה";
 $userheaders = "From: no-reply@boomerang.fit\n";
 $usermessage = "תודה פשוש";
