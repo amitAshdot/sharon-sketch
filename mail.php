@@ -7,8 +7,8 @@ $phone = $_POST["phone"];
 $to = "amitashdot@gmail.com";
 $subject = "כההההה, יש ליד חדש";
 $headers = "From: no-reply@boomerang.fit\r\n";
-$header .= "MIME-Version: 1.0\r\n";
-$header .= "Content-type: text/html\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html\r\n";
 
 $message = " \n כהההה, מישהו רוצה לשמוע על האימונים\r\n<br>
 שם: $name \r\n  
