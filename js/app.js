@@ -180,7 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 data: formData,
                 success: function (e) {
                     debugger
-                    window.location = "thank-you.html";
+                    debugger
+                    debugger
+                    debugger
+                    // window.location = "thank-you.html";
                 }
             }).done(function (response) {
                 console.log(response);
