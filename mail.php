@@ -1,9 +1,7 @@
 <?PHP
-
 $email = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
-
 $to = "amitashdot@gmail.com";
 $subject = "כההההה, יש ליד חדש";
 $headers = "From: no-reply@boomerang.fit\r\n";
