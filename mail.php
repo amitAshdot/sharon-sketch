@@ -23,6 +23,7 @@ $usermessage = "תודה פשוש";
 
 $retval = mail($to,$subject,$message,$headers); //send to Sharon&Aya
 if( $retval == true ) {
+   echo($retval);
             echo "Message sent successfully...";
          }else {
             echo "Message could not be sent...";
