@@ -117,7 +117,7 @@
               <h3 class="lesson-top-title">שיעורי פילאטיס מכשרים</h3>
             </div>
             <div class="lesson-text">
-              <h4 class="lesson-text-short">אימון המפתח את הגוף באופן מאוזן ושווה</h4>
+              <h4 class="lesson-text-short">שרירי הליבה שלך קוראים לך</h4>
             </div>
           </div>
           <div class="u-fake-border"></div>
@@ -236,6 +236,8 @@
         <select name="time" id="time" class="form-input show-on-scroll">
           <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
           <option value="8:00-10:00">8:00-10:00</option>
+          <option value="10:00-12:00">10:00-12:00</option>
+          <option value="12:00-14:00">12:00-14:00</option>
           <option value="14:00-16:00">14:00-16:00</option>
           <option value="16:00-18:00">16:00-18:00</option>
           <option value="18:00-20:00">18:00-20:00</option>
