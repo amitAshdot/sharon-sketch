@@ -1,14 +1,5 @@
 <?PHP
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
-
-// require './php/src/Exception.php';
-// require './php/src/PHPMailer.php';
-// require './php/src/SMTP.php';
-
-
-
 $email = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
