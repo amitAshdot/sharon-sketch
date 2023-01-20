@@ -114,7 +114,7 @@
         <div class="lesson-container show-on-scroll">
           <div class="lesson" id="first">
             <div class="lesson-top">
-              <h3 class="lesson-top-title">שיעורי פילאטיס מכשרים</h3>
+              <h3 class="lesson-top-title">שיעורי פילאטיס מכשירים</h3>
             </div>
             <div class="lesson-text">
               <h4 class="lesson-text-short">שרירי הליבה שלך קוראים לך</h4>
@@ -126,7 +126,7 @@
           <div class="lesson-hidden-container">
             <div class="lesson-hidden-exit">X</div>
             <div class="lesson-hidden-right">
-              <h3 class="lesson-hidden-right-title">שיעורי פילאטיס מכשרים</h3>
+              <h3 class="lesson-hidden-right-title">שיעורי פילאטיס מכשירים</h3>
               <p class="lesson-hidden-text">פילאטיס הוא אימון המפתח את הגוף באופן מאוזן ושווה, מתקן יציבה לקויה, משמר את
                 חיות וחיוניות הגוף. תוכלו לפגוש בסטודיו
                 אימוני פילאטיס בשיטה הקלאסית וגם אימונים מודרניים.
@@ -159,7 +159,7 @@
             <div class="lesson-hidden-exit">X</div>
             <div class="lesson-hidden-right">
               <h3 class="lesson-hidden-right-title">שיעורי FIT</h3>
-              <p class="lesson-hidden-text">שיעור פילאטיס מכשירים המשלב תרגילים מעולם הפונקציונלי. שיעור בקצב מהיר,
+              <p class="lesson-hidden-text">שיעור פילאטיס מכשירים המשלב תרגילים מעולם הפונקציונאלי. שיעור בקצב מהיר,
                 בדופק גבוה עם מוזיקה ואווירה מלאת אדרנלין.
                 השיעור מתאים למתאמנים שמכירים את מיטת הפילאטיס ומעוניינים לצאת מאזור הנוחות.
               </p>
@@ -216,7 +216,7 @@
     <!-- CONTACT-US-SECTION START -->
     <div class="contact-us-section" id="white">
       <h3 class="contact-us-title show-on-scroll">צרו קשר</h3>
-      <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8">
+      <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8" >
 
         <div class="message-container"></div>
         <label id="namelabel" for="name">שם מלא"</label>

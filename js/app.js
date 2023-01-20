@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return re.test(String(phone));
     }
 
-    const validateForm = () => {
+    const validateForm = (e) => {
         let flag = false, name = document.getElementById("name"), email = document.getElementById("email"),
             phone = document.getElementById("phone");
 
@@ -159,39 +159,30 @@ document.addEventListener("DOMContentLoaded", function () {
             phone.classList.add("error");
             flag = true;
         }
-        if (flag) {
-            message.innerHTML = "אנא מלא/י את כל השדות הנדרשים";
-            message.classList.add("error");
-        }
+        // if (flag) {
+        //     message.innerHTML = "אנא מלא/י את כל השדות הנדרשים";
+        //     message.classList.add("error");
+        // }
         return flag ? false : true;
     }
     // -----END EMAIL VALIDATION-----
 
     // -----START EMAIL SUBMIT-----
     document.getElementById("form").addEventListener("submit", async function (e) {
-        if (validateForm()) {
-            e.preventDefault();
+        e.preventDefault();
+        if (validateForm(e)) {
             var form = document.getElementById("form");
             var formData = $(form).serialize(); //serialize this particular form
-            // alert(formData)
             $.ajax({
                 type: 'POST',
                 url: '../mail.php',
                 data: formData,
                 success: function (e) {
-                    debugger
-                    debugger
-                    debugger
-                    debugger
-                    // window.location = "thank-you.html";
+                    window.location = "thank-you.html";
                 }
-            }).done(function (response) {
-                console.log(response);
-
-            });
+            })
             return true
         } else {
-            e.preventDefault();
             return false
         }
     });

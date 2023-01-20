@@ -1,33 +1,38 @@
-<?PHP
+<?php
 $email = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
-$to = "amitashdot@gmail.com";
-$subject = "כההההה, יש ליד חדש";
-$headers = "From: no-reply@boomerang.fit\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html\r\n";
+$time = $_POST["time"];
 
-$message = " \n כהההה, מישהו רוצה לשמוע על האימונים\r\n<br>
-שם: $name \r\n  
-טלפון: $phone \r\n
-email: $email \r\n
+$email_from = 'no-reply@boomerang.fit';
 
-בהצלחה!
-";
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion()."\r\n" .
+'Content-Type: text/html; charset=UTF-8';
 
-$user = $email;
-$usersubject = "כהההה";
-$userheaders = "From: no-reply@boomerang.fit\n";
-$usermessage = "תודה פשוש";
+$email_to = "Boomerangfit23@gmail.com";
+$email_subject = "yes! new lead..!";
+//Errors to show if there is a problem in form fields.
 
-$retval = mail($to,$subject,$message,$headers); //send to Sharon&Aya
-if( $retval == true ) {
-   echo($retval);
-            echo "Message sent successfully...";
-         }else {
-            echo "Message could not be sent...";
-         }
-mail($user,$usersubject,$usermessage,$userheaders); //send to user
+
+$email_message .= "<p>";
+$email_message .= "אימייל: ". $email . " \r\n\n";
+$email_message .= "</p>";
+$email_message .= "<p>";
+$email_message .= "שם: ".$name . " \r\n\n";
+$email_message .= "</p>";
+$email_message .= "<p>";
+$email_message .= "טלפון: ".$phone . " \r\n\n";
+$email_message .= "</p>";
+$email_message .= "<p>";
+$email_message .= "זמן לחזור: ".$time . " \r\n\n";
+$email_message .= "</p>";
+
+$isMailSent = @mail($email_to, $email_subject, $email_message, $headers);
+if($isMailSent){
+   echo "mail sent:" . $isMailSent;
+}else{
+   echo "failed";
+}
 ?>
-
