@@ -78,7 +78,8 @@
     }
 
     select {
-        -webkit-appearance: none;
+        @include inputBasic;
+        border-bottom: 1px solid;
 
         option {
             color: $color-black;
