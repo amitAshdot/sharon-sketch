@@ -87,6 +87,19 @@ body {
   // border-radius: 20rem;
 }
 
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+[type=”email”],
+[type=”tel”],
+[type=”number”],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 .bld {
   font-family: "adoveFnt22-bold";
 }

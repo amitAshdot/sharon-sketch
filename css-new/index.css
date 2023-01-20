@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 0-350px: small phone
 350-600px : phone
@@ -175,6 +176,19 @@ body {
   .btn-container:hover > a {
     transform: translate(0.5rem, 0.5rem);
   }
+}
+
+textarea,
+input.text,
+input[type=text],
+input[type=button],
+input[type=submit],
+[type=”email”],
+[type=”tel”],
+[type=”number”],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .bld {
