@@ -84,6 +84,11 @@
         border-bottom: 1px solid;
         cursor: pointer;
         background: rgba(255, 255, 255, 1);
+        color: $color-black;
+
+        &:focus {
+            color: $color-primary;
+        }
 
         option {
             color: $color-black;

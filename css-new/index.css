@@ -857,6 +857,7 @@ input[type=submit],
   border-bottom: 1px solid;
   cursor: pointer;
   background: rgb(255, 255, 255);
+  color: #000;
 }
 @media only screen and (max-width: 58.75em) {
   .form select {
@@ -864,6 +865,9 @@ input[type=submit],
     padding: 0 1rem;
     height: 2rem;
   }
+}
+.form select:focus {
+  color: #94b4a9;
 }
 .form select:focus {
   color: #94b4a9;
