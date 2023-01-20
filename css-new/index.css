@@ -875,7 +875,8 @@ input[type=submit],
   align-self: center;
   transition: all 0.2s;
 }
-.form-submit {
+.form-submit,
+.form input[type=submit] {
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -912,7 +913,8 @@ input[type=submit],
   align-self: center;
   transition: all 0.5s;
 }
-.form-submit::after {
+.form-submit::after,
+.form input[type=submit]::after {
   cursor: pointer;
   position: absolute;
   content: "";
@@ -924,30 +926,38 @@ input[type=submit],
   background-color: black;
   transition: height 0.2s ease;
 }
-.form-submit:hover, .form-submit:focus {
+.form-submit:hover, .form-submit:focus,
+.form input[type=submit]:hover,
+.form input[type=submit]:focus {
   color: #94b4a9;
   border: 2px solid black;
 }
-.form-submit:hover::after, .form-submit:focus::after {
+.form-submit:hover::after, .form-submit:focus::after,
+.form input[type=submit]:hover::after,
+.form input[type=submit]:focus::after {
   height: calc(100% + 4px);
 }
 @media only screen and (max-width: 66.875em) {
-  .form-submit {
+  .form-submit,
+  .form input[type=submit] {
     font-size: 1rem;
     padding: 0 1rem;
   }
 }
 @media only screen and (max-width: 66.875em) {
-  .form-submit {
+  .form-submit,
+  .form input[type=submit] {
     width: 100%;
   }
-  .form-submit:hover {
+  .form-submit:hover,
+  .form input[type=submit]:hover {
     top: 0rem;
     right: 0rem;
     color: #000;
   }
 }
-.form-submit:hover {
+.form-submit:hover,
+.form input[type=submit]:hover {
   top: 0rem;
   right: 0rem;
   color: #000;
