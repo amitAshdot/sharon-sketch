@@ -79,6 +79,8 @@
 
     select {
         @include inputBasic;
+        -moz-appearance: none;
+        appearance: none;
         border-bottom: 1px solid;
         cursor: pointer;
 
