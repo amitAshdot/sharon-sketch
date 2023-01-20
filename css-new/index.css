@@ -826,6 +826,9 @@ body {
 .form-input:hover::placeholder {
   color: #82a297;
 }
+.form select {
+  -webkit-appearance: none;
+}
 .form select option {
   color: #000;
 }
