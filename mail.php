@@ -12,7 +12,7 @@ $headers = 'From: '.$email_from."\r\n".
 'Content-type: text/html; charset=iso-8859-1'."\r\n";
 
 
-$email_to = "Boomerangfit23@gmail.com";
+$email_to = "boomerangfit23@gmail.com";
 $email_subject = "Yes! Some want to join!";
 //Errors to show if there is a problem in form fields.
 
