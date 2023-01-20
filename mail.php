@@ -9,14 +9,15 @@ $email_from = 'no-reply@boomerang.fit';
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion()."\r\n" .
-'Content-Type: text/html; charset=UTF-8';
+'Content-type: text/html; charset=iso-8859-1'."\r\n";
+
 
 $email_to = "Boomerangfit23@gmail.com";
-$email_subject = "yes! new lead..!";
+$email_subject = "Yes! Some want to join!";
 //Errors to show if there is a problem in form fields.
 
 
-$email_message .= "<p>";
+$email_message = "<p>";
 $email_message .= "אימייל: ". $email . " \r\n\n";
 $email_message .= "</p>";
 $email_message .= "<p>";
@@ -36,3 +37,6 @@ if($isMailSent){
    echo "failed";
 }
 ?>
+
+
+
