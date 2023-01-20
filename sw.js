@@ -5,7 +5,7 @@ const assets = [
     "./index.php",
     "./css/index.css",
     "./css/index.min.css",
-    "./js/app.js",
+    "./js/app-1.0.js",
     "./js/jquery3.6.min.js",
     "./js/owl.carousel.min.js",
     "./images/favicon-32x32.png",
