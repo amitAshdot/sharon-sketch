@@ -216,7 +216,7 @@
     <!-- CONTACT-US-SECTION START -->
     <div class="contact-us-section" id="white">
       <h3 class="contact-us-title show-on-scroll">צרו קשר</h3>
-      <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8" >
+      <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8">
 
         <div class="message-container"></div>
         <label id="namelabel" for="name">שם מלא"</label>
@@ -336,7 +336,7 @@
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE"
     crossorigin="anonymous"></script>
-  <script defer src="./js/app.js"></script>
+  <script defer src="./js/app-1.0.js"></script>
   <script defer type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 </body>
 
