@@ -80,6 +80,7 @@
     select {
         @include inputBasic;
         border-bottom: 1px solid;
+        cursor: pointer;
 
         option {
             color: $color-black;

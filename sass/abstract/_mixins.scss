@@ -8,6 +8,7 @@
   padding: 0 0.5rem 0 0;
   font-size: 1.5rem;
   -webkit-appearance: none;
+  cursor: text;
 
   @include respond(tab-port) {
     font-size: 1rem;

@@ -800,6 +800,7 @@ body {
   padding: 0 0.5rem 0 0;
   font-size: 1.5rem;
   -webkit-appearance: none;
+  cursor: text;
   width: 15%;
   border-bottom: 1px solid;
 }
@@ -836,7 +837,9 @@ body {
   padding: 0 0.5rem 0 0;
   font-size: 1.5rem;
   -webkit-appearance: none;
+  cursor: text;
   border-bottom: 1px solid;
+  cursor: pointer;
 }
 @media only screen and (max-width: 58.75em) {
   .form select {
