@@ -245,7 +245,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000)
     // ----- END SHOWING POPUP -----
 
-
     // new PerformanceObserver((list) => {
     //     const latestEntry = list.getEntries().at(-1);
     //     if (latestEntry?.element?.getAttribute('loading') == 'lazy') {

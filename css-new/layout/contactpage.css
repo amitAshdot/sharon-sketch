@@ -1,0 +1,40 @@
+html {
+  overflow: visible;
+  height: 100vh;
+}
+
+main {
+  overflow: visible;
+}
+
+header {
+  display: none;
+}
+
+.about-section {
+  margin: 0;
+}
+
+.contact-us {
+  overflow: visible;
+}
+.contact-us-section {
+  border: 1px solid;
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  background: white;
+}
+.contact-us-title {
+  margin: auto;
+  text-align: center;
+  padding-block-start: 1rem;
+}
+
+.callPhone-fixed {
+  top: 82vh;
+}
+
+/*# sourceMappingURL=contactpage.css.map */

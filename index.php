@@ -262,10 +262,10 @@
           height="471" />
         <img src="./images/mobileimg-new/3.webp" alt="תמונת אימון3" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/4.webp" alt="תמונת אימון4" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/5.webp" alt="תמונת אימון5" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/6.webp" alt="תמונת אימון6" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/7.webp" alt="תמונת אימון7" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/8.webp" alt="תמונת אימון8" class="" loading="lazy" width="414" height="471" />
+        <img src="./images/mobileimg-new/5.webp" alt="תמונת אימון5" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/9.webp" alt="תמונת אימון9" class="" loading="lazy" width="414" height="471" />
         <img src="./images/mobileimg-new/10.webp" alt="תמונת אימון10" class="" loading="lazy" width="414"
           height="471" />
