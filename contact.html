@@ -69,42 +69,44 @@
         </section>
         <!-- ABOUT SECTION END-->
         <!-- CONTACT-US-SECTION START -->
-        <div class="contact-us-section u-mobile" id="white">
-            <h3 class="contact-us-title ">צרו קשר</h3>
-            <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8">
+        <div class="contact-us-outer-container">
+            <div class="contact-us-section u-mobile" id="white">
+                <h3 class="contact-us-title ">צרו קשר</h3>
+                <form class="contact-us-container form " id="form" method="POST" accept-charset="utf-8">
 
-                <div class="message-container"></div>
-                <label id="namelabel" for="name">שם מלא"</label>
-                <input name="name" aria-labelledby="namelabel" id="name" type="text" placeholder="שם מלא"
-                    class="form-input ">
+                    <div class="message-container"></div>
+                    <label id="namelabel" for="name">שם מלא"</label>
+                    <input name="name" aria-labelledby="namelabel" id="name" type="text" placeholder="שם מלא"
+                        class="form-input ">
 
-                <label id="phonelabel" for="phone">טלפון</label>
-                <input name="phone" aria-labelledby="phonelabel" id="phone" type="tel" placeholder="טלפון"
-                    class="form-input ">
+                    <label id="phonelabel" for="phone">טלפון</label>
+                    <input name="phone" aria-labelledby="phonelabel" id="phone" type="tel" placeholder="טלפון"
+                        class="form-input ">
 
-                <label id="emaillabel" for="email">אימייל</label>
-                <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
-                    class="form-input ">
+                    <label id="emaillabel" for="email">אימייל</label>
+                    <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
+                        class="form-input ">
 
-                <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
+                    <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
 
-                <select name="time" id="time" class="form-input ">
-                    <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
-                    <option value="8:00-10:00">8:00-10:00</option>
-                    <option value="10:00-12:00">10:00-12:00</option>
-                    <option value="12:00-14:00">12:00-14:00</option>
-                    <option value="14:00-16:00">14:00-16:00</option>
-                    <option value="16:00-18:00">16:00-18:00</option>
-                    <option value="18:00-20:00">18:00-20:00</option>
-                </select>
+                    <select name="time" id="time" class="form-input ">
+                        <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
+                        <option value="8:00-10:00">8:00-10:00</option>
+                        <option value="10:00-12:00">10:00-12:00</option>
+                        <option value="12:00-14:00">12:00-14:00</option>
+                        <option value="14:00-16:00">14:00-16:00</option>
+                        <option value="16:00-18:00">16:00-18:00</option>
+                        <option value="18:00-20:00">18:00-20:00</option>
+                    </select>
 
-                <div class="btn-container ">
-                    <input type="submit" value="שלח" class="form-submit btn g-recaptcha"
-                        data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>
-                    <div class="u-fake-border u-round"></div>
-                </div>
+                    <div class="btn-container ">
+                        <input type="submit" value="שלח" class="form-submit btn g-recaptcha"
+                            data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>
+                        <div class="u-fake-border u-round"></div>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
         <!-- CONTACT-US-SECTION END -->
 

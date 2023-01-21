@@ -14,10 +14,18 @@ header {
   margin: 0;
 }
 
+.contact-us-outer-container {
+  height: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-us {
   overflow: visible;
 }
 .contact-us-section {
+  flex-direction: column;
   border: 1px solid;
   border-radius: 1rem;
   width: 90%;

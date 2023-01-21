@@ -1318,6 +1318,11 @@ img.slick-slide {
   height: inherit !important;
   max-height: 600px;
 }
+@media only screen and (max-width: 58.75em) {
+  img.slick-slide {
+    border-radius: 1rem;
+  }
+}
 
 .slide {
   height: 100%;
@@ -1327,6 +1332,7 @@ img.slick-slide {
   display: flex !important;
   margin-bottom: 0;
   object-fit: cover;
+  gap: 1rem;
 }
 
 .floating {

@@ -207,6 +207,10 @@ img.slick-slide {
     object-fit: cover;
     height: inherit !important;
     max-height: 600px;
+
+    @include respond(tab-port) {
+        border-radius: 1rem;
+    }
 }
 
 .slide {
@@ -217,4 +221,5 @@ img.slick-slide {
     display: flex !important;
     margin-bottom: 0;
     object-fit: cover;
+    gap: 1rem;
 }

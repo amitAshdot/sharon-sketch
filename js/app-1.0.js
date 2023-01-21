@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 3000,
+
         responsive: [
             {
                 breakpoint: 600,
