@@ -1,6 +1,5 @@
 html {
   overflow: visible;
-  height: 100vh;
 }
 
 main {
@@ -35,6 +34,19 @@ header {
 
 .callPhone-fixed {
   top: 82vh;
+}
+
+.u-desktop {
+  background-color: #94b4a9;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.u-desktop h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
 }
 
 /*# sourceMappingURL=contactpage.css.map */
