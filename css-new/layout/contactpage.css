@@ -48,5 +48,9 @@ header {
   justify-content: center;
   margin: auto;
 }
+.u-desktop .btn {
+  width: 5rem;
+  height: 3rem;
+}
 
 /*# sourceMappingURL=contactpage.css.map */
