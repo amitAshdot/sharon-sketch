@@ -207,10 +207,7 @@ img.slick-slide {
     object-fit: cover;
     height: inherit !important;
     max-height: 600px;
-
-    @include respond(tab-port) {
-        border-radius: 1rem;
-    }
+    border-radius: 1rem;
 }
 
 .slide {
