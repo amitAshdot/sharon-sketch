@@ -404,7 +404,7 @@
             <source media="(max-width: 760px)" srcset="./images/mobileimg-new/7.webp" width="257.602" height="586"
               type="image/webp">
             <img class="popup-img" defer src="./images/dtimg-new/7.webp" alt="פופאפ" title="חבר מביא חבר"
-              loading="lazy">
+              loading="lazy" width="316.34" height="211">
           </picture>
         </div>
       </div>
