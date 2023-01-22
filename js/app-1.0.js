@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         centerMode: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 3000,
 
         responsive: [
