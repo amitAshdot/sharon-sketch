@@ -256,39 +256,120 @@
     <!-- GALLERY START -->
     <section class="gallery">
       <div class="slider">
-        <img src="./images/mobileimg-new/1 (1).webp" alt="תמונת אימון" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/2 (1).webp" alt="תמונת אימון2" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/3.webp" alt="תמונת אימון3" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/4.webp" alt="תמונת אימון4" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/6.webp" alt="תמונת אימון6" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/7.webp" alt="תמונת אימון7" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/8.webp" alt="תמונת אימון8" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/5.webp" alt="תמונת אימון5" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/9.webp" alt="תמונת אימון9" class="" loading="lazy" width="414" height="471" />
-        <img src="./images/mobileimg-new/10.webp" alt="תמונת אימון10" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/11.webp" alt="תמונת אימון11" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/12.webp" alt="תמונת אימון12" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/13.webp" alt="תמונת אימון13" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/14.webp" alt="תמונת אימון14" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/15.webp" alt="תמונת אימון15" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/16.webp" alt="תמונת אימון16" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/17.webp" alt="תמונת אימון17" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/18.webp" alt="תמונת אימון18" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/19.webp" alt="תמונת אימון19" class="" loading="lazy" width="414"
-          height="471" />
-        <img src="./images/mobileimg-new/20.webp" alt="תמונת אימון20" class="" loading="lazy" width="414"
-          height="471" />
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/1 (1).webp" alt="תמונת אימון" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/2 (1).webp" alt="תמונת אימון2" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/3.webp" alt="תמונת אימון3" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/4.webp" alt="תמונת אימון4" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/6.webp" alt="תמונת אימון6" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/7.webp" alt="תמונת אימון7" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/8.webp" alt="תמונת אימון8" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/5.webp" alt="תמונת אימון5" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/10.webp" alt="תמונת אימון10" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/11.webp" alt="תמונת אימון11" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/12.webp" alt="תמונת אימון12" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/13.webp" alt="תמונת אימון13" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/14.webp" alt="תמונת אימון14" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/15.webp" alt="תמונת אימון15" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/16.webp" alt="תמונת אימון16" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/17.webp" alt="תמונת אימון17" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/18.webp" alt="תמונת אימון18" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/19.webp" alt="תמונת אימון19" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
+
+        <div class="slider-item">
+          <img src="./images/mobileimg-new/20.webp" alt="תמונת אימון20" class="" loading="lazy" width="414"
+            height="471" />
+          <div class="u-fake-border u-round slider-border"></div>
+        </div>
       </div>
     </section>
     <!-- GALLERY EMD -->
