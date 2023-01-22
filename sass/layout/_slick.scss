@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+
+.gallery {
+    overflow: visible;
+
+    margin-block-end: 5rem;
+}
+
 /* Slider */
 .slick-loading .slick-list {
     background: #fff url('https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/ajax-loader.gif') center center no-repeat;
@@ -114,7 +121,7 @@
 /* Dots */
 .slick-dotted.slick-slider {
     margin-bottom: 30px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .slick-dots {
@@ -212,11 +219,53 @@ img.slick-slide {
 
 .slide {
     height: 100%;
+
+
 }
 
 .slick-track {
     display: flex !important;
     margin-bottom: 0;
     object-fit: cover;
-    gap: 1rem;
+    gap: 2rem;
+    overflow: visible;
+}
+
+.slick-list {
+    overflow: visible;
+}
+
+.slider {
+    position: relative;
+    overflow: visible;
+
+    &-item {
+        position: relative;
+        height: 650px;
+        overflow: visible;
+
+        @include respond(tab-port) {
+            height: 444px;
+            overflow: visible;
+        }
+
+        img {
+            position: absolute;
+            right: 1rem;
+            top: -1rem;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+
+        &:nth-child(even) {
+            img {
+                right: 1rem;
+                top: 1rem;
+            }
+        }
+    }
+
+    &-border {}
 }
