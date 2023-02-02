@@ -230,9 +230,8 @@
         <label id="emaillabel" for="email">אימייל</label>
         <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
           class="form-input show-on-scroll">
-
+<!-- 
         <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
-
         <select name="time" id="time" class="form-input show-on-scroll">
           <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
           <option value="8:00-10:00">8:00-10:00</option>
@@ -241,7 +240,7 @@
           <option value="14:00-16:00">14:00-16:00</option>
           <option value="16:00-18:00">16:00-18:00</option>
           <option value="18:00-20:00">18:00-20:00</option>
-        </select>
+        </select> -->
 
         <div class="btn-container show-on-scroll">
           <input type="submit" value="שלח" class="form-submit btn g-recaptcha" data-sitekey="reCAPTCHA_site_key"

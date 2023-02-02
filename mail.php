@@ -2,7 +2,7 @@
 $email = $_POST["email"];
 $name = $_POST["name"];
 $phone = $_POST["phone"];
-$time = $_POST["time"];
+// $time = $_POST["time"];
 
 $email_from = 'no-reply@boomerang.fit';
 
@@ -26,9 +26,9 @@ $email_message .= "</p>";
 $email_message .= "<p>";
 $email_message .= "טלפון: ".$phone . " \r\n\n";
 $email_message .= "</p>";
-$email_message .= "<p>";
-$email_message .= "זמן לחזור: ".$time . " \r\n\n";
-$email_message .= "</p>";
+// $email_message .= "<p>";
+// $email_message .= "זמן לחזור: ".$time . " \r\n\n";
+// $email_message .= "</p>";
 
 $isMailSent = @mail($email_to, $email_subject, $email_message, $headers);
 if($isMailSent){
