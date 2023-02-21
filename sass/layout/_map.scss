@@ -33,6 +33,7 @@
 
             @include respond(mini-desktop) {
                 top: -1rem;
+                right: 0.5rem;
             }
 
             iframe.map-google {
