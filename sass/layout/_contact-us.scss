@@ -7,7 +7,8 @@
 
         @include respond(mini-desktop) {
             padding-inline: 1rem;
-            margin-block: 1rem;
+            margin-block-start: 2rem;
+            margin-block-end: 3rem;
         }
     }
 

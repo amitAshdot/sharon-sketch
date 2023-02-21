@@ -776,7 +776,8 @@ input[type=submit],
 @media only screen and (max-width: 66.875em) {
   .contact-us-section {
     padding-inline: 1rem;
-    margin-block: 1rem;
+    margin-block-start: 2rem;
+    margin-block-end: 3rem;
   }
 }
 .contact-us-title {
