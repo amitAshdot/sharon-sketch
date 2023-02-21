@@ -188,7 +188,6 @@ input[type=submit],
 [type=”number”],
 .input-checkbox {
   -webkit-appearance: none;
-  border-radius: 0;
 }
 
 .bld {
@@ -1169,6 +1168,100 @@ input[type=submit],
   border-radius: 0.5rem;
 }
 
+.map-section {
+  display: flex;
+  margin-block: 10rem;
+  overflow: visible;
+}
+@media only screen and (max-width: 66.875em) {
+  .map-section {
+    flex-direction: column;
+    margin-block: 1rem;
+  }
+}
+.map-container {
+  position: relative;
+  width: 45%;
+  height: 25rem;
+  overflow: visible;
+}
+@media only screen and (max-width: 66.875em) {
+  .map-container {
+    width: 84%;
+    height: 18rem;
+    align-self: center;
+  }
+}
+.map-container .map-google {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 1rem;
+  right: -1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.map-container .map-google iframe.map-google {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.map-details {
+  position: relative;
+  width: 45%;
+  height: 25rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 66.875em) {
+  .map-details {
+    width: 84%;
+    height: 16rem;
+    align-self: center;
+  }
+}
+.map-details-cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+  margin-inline: auto;
+  width: 12rem;
+  height: 4rem;
+  overflow: visible;
+}
+@media only screen and (max-width: 66.875em) {
+  .map-details-cta {
+    margin-block: 1.5rem;
+  }
+}
+.map-details-cta:hover > .map-details-btn {
+  transform: translate(0.5rem, -0.5rem);
+  overflow: hidden;
+}
+.map-details-btn {
+  transition: all 0.2s;
+  overflow: hidden;
+  background-color: rgba(226, 149, 121, 0.7568627451);
+}
+.map-details-btn:hover {
+  transform: translate(0.5rem, -0.5rem);
+  overflow: hidden;
+}
+.map-details .icon-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+@media only screen and (max-width: 66.875em) {
+  .map-details .icon-container p {
+    font-size: 1rem;
+  }
+}
+
 .callPhone {
   position: relative;
   display: flex;
@@ -1231,27 +1324,30 @@ input[type=submit],
 }
 
 .fa-instagram,
-.fa-facebook {
+.fa-facebook,
+.a-map-marker {
   background: #94b4a9;
   background: #e29579;
   color: #000;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   position: relative;
   display: flex;
   align-self: center;
 }
 @media only screen and (max-width: 66.875em) {
   .fa-instagram,
-  .fa-facebook {
+  .fa-facebook,
+  .a-map-marker {
     font-size: 1.5rem;
     line-height: 1.5rem;
     padding: 1rem;
   }
 }
 .fa-instagram::before,
-.fa-facebook::before {
+.fa-facebook::before,
+.a-map-marker::before {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -1261,6 +1357,14 @@ input[type=submit],
 
 .fa-facebook {
   color: #000;
+}
+
+.a-map-marker {
+  color: #000;
+}
+.a-map-marker::before {
+  color: #000;
+  content: "\f041";
 }
 
 .social {
@@ -1393,4 +1497,4 @@ img.slick-slide {
   margin: 0 1rem;
 }
 
-/*# sourceMappingURL=index1.0.css.map */
+/*# sourceMappingURL=index1.5.css.map */

@@ -1,13 +1,14 @@
 .fa-instagram,
-.fa-facebook {
+.fa-facebook,
+.a-map-marker {
     background: $color-primary;
     background: $color-last;
     // color: white;
     color: #000;
     border-radius: 50%;
 
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
     display: flex;
     align-self: center;
@@ -33,6 +34,15 @@
     // &::before {
     //     content: "\f09a";
     // }
+}
+
+.a-map-marker {
+    color: #000;
+
+    &::before {
+        color: #000;
+        content: "\f041";
+    }
 }
 
 .social {

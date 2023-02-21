@@ -1,0 +1,104 @@
+.map {
+    &-section {
+        display: flex;
+        margin-block: 10rem;
+        overflow: visible;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+            margin-block: 1rem;
+        }
+    }
+
+    &-container {
+        position: relative;
+        width: 45%;
+        height: 25rem;
+        overflow: visible;
+
+        @include respond(mini-desktop) {
+            width: 84%;
+            height: 18rem;
+            align-self: center;
+        }
+
+        .map-google {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 1rem;
+            right: -1rem;
+            border-radius: 1rem;
+            border: 1px solid black;
+
+            iframe.map-google {
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+            }
+        }
+    }
+
+    &-details {
+        position: relative;
+        width: 45%;
+        height: 25rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(mini-desktop) {
+            width: 84%;
+            height: 16rem;
+            align-self: center;
+        }
+
+        &-cta {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-block: 2rem;
+            margin-inline: auto;
+            width: 12rem;
+            height: 4rem;
+            overflow: visible;
+
+            @include respond(mini-desktop) {
+                margin-block: 1.5rem;
+            }
+
+            &:hover>.map-details-btn {
+                transform: translate(0.5rem, -0.5rem);
+                overflow: hidden;
+            }
+        }
+
+        &-btn {
+            transition: all 0.2s;
+            overflow: hidden;
+            background-color: $color-last-part-transparent;
+
+            &:hover {
+                transform: translate(0.5rem, -0.5rem);
+                overflow: hidden;
+            }
+        }
+
+        .icon-container {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            p {
+
+                @include respond(mini-desktop) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+
+}

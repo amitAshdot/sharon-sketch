@@ -116,6 +116,11 @@
      content: "\f09a"
  }
 
+ .a-map-marker-f:before,
+ .a-map-marker:before {
+     content: "\f041";
+ }
+
  .fa-link:before {
      content: "\f0c1"
  }
@@ -166,6 +171,10 @@
  }
 
  .fa-facebook-official:before {
+     content: "\f230"
+ }
+
+ .a-map-marker-f:before {
      content: "\f230"
  }
 
