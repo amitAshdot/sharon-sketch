@@ -34,7 +34,7 @@
 
   <meta name="theme-color" content="#94b4a9">
 
-  <link rel="stylesheet" type="text/css" href="./css-new/index1.0.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="./css-new/index1.5.css" media="screen" />
   <link rel="stylesheet" href="./css-new/base/awesome.css">
 </head>
 
@@ -48,10 +48,13 @@
       </picture>
     </div>
     <div class="social">
+      <a href="https://goo.gl/maps/WnhCNGKMBLZpZEtXA" class="fa a-map-marker u-mobile" aria-label="מעבר לעמוד פייסבוק"
+        rel="nofollow" target="_blank"></a>
       <a href="instagram://user?username=boomerang_studio_official" class="fa fa-instagram u-mobile"
         aria-label="מעבר לעמוד אינסטגרם" rel="nofollow" target="_blank"></a>
       <a href="https://www.facebook.com/profile.php?id=100089156094609&mibextid=LQQJ4d" class="fa fa-facebook u-mobile"
         aria-label="מעבר לעמוד פייסבוק" rel="nofollow" target="_blank"></a>
+
     </div>
   </header>
   <main>
@@ -212,7 +215,32 @@
       </div>
     </section>
     <!-- LESSONS SECTION END-->
-
+    <!-- MAP START-->
+    <section class="map-section">
+      <div class="map-details">
+        <h3 class="map-details-title">איפה אנחנו מתאמנים?</h3>
+        <!-- <p class="map-details-text"> -->
+        <div class="icon-container"><a href="https://goo.gl/maps/WnhCNGKMBLZpZEtXA" class="icon fa a-map-marker"
+            aria-label="מעבר לעמוד פייסבוק" rel="nofollow" target="_blank"></a>
+          <p>ההגנה 14, באר שבע</p>
+        </div>
+        <!-- </p> -->
+        <div class="map-details-cta">
+          <a class="map-details-btn btn" href="https://goo.gl/maps/WnhCNGKMBLZpZEtXA" target="_blank"
+            rel=”nofollow”>תראו בגוגל
+            מפות</a>
+          <div class="u-fake-border u-round"></div>
+        </div>
+      </div>
+      <div class="map-container">
+        <iframe class="map-google"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3766216308154!2d34.787736584345076!3d31.237995781463813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502661ab66fc4c3%3A0xcbc6ba0bff44a49!2z15TXlNeS16DXlCAxNCwg15HXkNeoINep15HXog!5e0!3m2!1siw!2sil!4v1677001606847!5m2!1siw!2sil"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="u-fake-border u-round"></div>
+      </div>
+    </section>
+    <!-- MAP END -->
     <!-- CONTACT-US-SECTION START -->
     <div class="contact-us-section" id="white">
       <h3 class="contact-us-title show-on-scroll">צרו קשר</h3>
@@ -230,8 +258,8 @@
         <label id="emaillabel" for="email">אימייל</label>
         <input name="email" aria-labelledby="emaillabel" id="email" type="email" placeholder="אימייל"
           class="form-input show-on-scroll">
-<!-- 
-        <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
+
+        <!-- <label for="time" id="timeLabel">מתי לחזור אליכם?</label>
         <select name="time" id="time" class="form-input show-on-scroll">
           <option value="מתי לחזור אליכם?">מתי לחזור אליכם</option>
           <option value="8:00-10:00">8:00-10:00</option>
@@ -537,7 +565,7 @@
             <source media="(max-width: 760px)" srcset="./images/mobileimg-new/7.webp" width="257.602" height="586"
               type="image/webp">
             <img class="popup-img" defer src="./images/dtimg-new/7.webp" alt="פופאפ" title="חבר מביא חבר"
-              width="257.602" height="586" loading="lazy">
+              width="257.602" height="335" loading="lazy">
           </picture>
         </div>
       </div>
@@ -545,6 +573,8 @@
     <!-- POPUP END -->
   </main>
   <footer class=" footer">
+    <!-- test test test
+    <a href="https://www.google.com/maps/place/31%C2%B014'32.8%22N+34%C2%B047'27.0%22E/@31.242442,34.7930087,17z/data=!3m1!4b1!4m4!3m3!8m2!3d31.242442!4d34.79082">google</a> -->
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"
