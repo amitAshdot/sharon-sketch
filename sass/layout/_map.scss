@@ -31,6 +31,10 @@
             border-radius: 1rem;
             border: 1px solid black;
 
+            @include respond(mini-desktop) {
+                top: -1rem;
+            }
+
             iframe.map-google {
                 width: 100%;
                 height: 100%;
