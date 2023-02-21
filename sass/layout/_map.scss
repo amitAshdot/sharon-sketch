@@ -50,7 +50,7 @@
         align-items: center;
 
         @include respond(mini-desktop) {
-            width: 84%;
+            width: 100%;
             height: 16rem;
             align-self: center;
         }
