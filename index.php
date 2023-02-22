@@ -237,7 +237,7 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3766216308154!2d34.787736584345076!3d31.237995781463813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502661ab66fc4c3%3A0xcbc6ba0bff44a49!2z15TXlNeS16DXlCAxNCwg15HXkNeoINep15HXog!5e0!3m2!1siw!2sil!4v1677001606847!5m2!1siw!2sil"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="u-fake-border u-round"></div>
+        <!-- <div class="u-fake-border u-round"></div> -->
       </div>
     </section>
     <!-- MAP END -->
