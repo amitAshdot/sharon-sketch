@@ -165,6 +165,8 @@ $breakpoint argument choices
   }
 
   @if $breakpoint==normal-desktop {
+
+    // ---- MAX WIDTH ---
     @media only screen and (max-width: 112.5em) {
       // 1800px
       @content;
@@ -172,6 +174,8 @@ $breakpoint argument choices
   }
 
   @if $breakpoint==big-desktop {
+
+    // ---- MIN WIDTH ---
     @media only screen and (min-width: 112.5em) {
       // 1800px
       @content;
