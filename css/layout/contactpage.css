@@ -1,0 +1,64 @@
+html {
+  overflow: visible;
+}
+
+main {
+  overflow: visible;
+}
+
+header {
+  display: none;
+}
+
+.about-section {
+  margin: 0;
+}
+
+.contact-us-outer-container {
+  height: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us {
+  overflow: visible;
+}
+.contact-us-section {
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  background: white;
+}
+.contact-us-title {
+  margin: auto;
+  text-align: center;
+  padding-block-start: 1rem;
+}
+
+.callPhone-fixed {
+  top: 82vh;
+}
+
+.u-desktop {
+  background-color: #94b4a9;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.u-desktop h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.u-desktop .btn {
+  width: 5rem;
+  height: 3rem;
+}
+
+/*# sourceMappingURL=contactpage.css.map */
