@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     //------END LESSON-----
 
+
     // -----START CHANGING INPUT COLOR SELECT-----
     // $("select").change(function (e) {
     //     debugger
