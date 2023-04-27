@@ -548,7 +548,7 @@
     <!-- CTA BTN END-->
 
     <!-- POPUP START-->
-    <div class="popup" id="popup">
+    <!-- <div class="popup" id="popup">
       <div class="popup-container">
         <div class="popup-exit" id="popup-exit">X</div>
         <div class="popup-right">
@@ -569,7 +569,7 @@
           </picture>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- POPUP END -->
   </main>
   <footer class=" footer">
