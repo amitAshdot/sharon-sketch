@@ -1,0 +1,19 @@
+.footer {
+    padding: 6rem 15rem 3rem;
+    background-color: $color-footer-dark;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+
+    &__right {}
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}

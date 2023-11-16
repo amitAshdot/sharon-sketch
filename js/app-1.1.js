@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;
         return true;
     }
-    let phoneNumberInput = document.getElementById("phone");
+    let phoneNumberInput = document.getElementById("top-phone");
     phoneNumberInput.onkeypress = isNumberKey
 
     const validateEmail = (email) => {
@@ -145,9 +145,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const validateForm = (e) => {
-        let flag = false, name = document.getElementById("name"), email = document.getElementById("email"),
-            phone = document.getElementById("phone");
-
+        let flag = false, name = document.getElementById("top-name"), email = document.getElementById("top-email"),
+            phone = document.getElementById("top-phone");
+        //remove error class to all inputs
+        name.classList.remove("error");
+        email.classList.remove("error");
+        phone.classList.remove("error");
+        //remove error message
+        // message.innerHTML = "";
+        // message.classList.remove("error");
+        //check if all inputs are valid
         if (name.value.length < 2) {
             name.classList.add("error");
             flag = true;
@@ -169,21 +176,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // -----END EMAIL VALIDATION-----
 
     // -----START EMAIL SUBMIT-----
-    document.getElementById("form").addEventListener("submit", async function (e) {
+    document.getElementById("top-form").addEventListener("submit", async function (e) {
         e.preventDefault();
+        debugger
         if (validateForm(e)) {
-            var form = document.getElementById("form");
-            var formData = $(form).serialize(); //serialize this particular form
-            $.ajax({
-                type: 'POST',
-                url: '../mail.php',
-                data: formData,
-                success: function (e) {
-                    window.location = "thank-you.html";
-                }
-            })
+            console.log('submit')
             return true
         } else {
+
             return false
         }
     });
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
         infinite: true,
         centerMode: true,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
 
