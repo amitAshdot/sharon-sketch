@@ -1,0 +1,213 @@
+/*!
+*  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/
+@font-face {
+  font-family: FontAwesome;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.fa-user:before {
+  content: "\f007";
+}
+
+.fa-tag:before {
+  content: "\f02b";
+}
+
+.fa-font:before {
+  content: "\f031";
+}
+
+.fa-bold:before {
+  content: "\f032";
+}
+
+.fa-text-height:before {
+  content: "\f034";
+}
+
+.fa-text-width:before {
+  content: "\f035";
+}
+
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+.fa-key:before {
+  content: "\f084";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.a-map-marker-f:before,
+.a-map-marker:before {
+  content: "\f041";
+}
+
+.fa-link:before {
+  content: "\f0c1";
+}
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+.fa-circle:before {
+  content: "\f111";
+}
+
+.fa-code:before {
+  content: "\f121";
+}
+
+.fa-info:before {
+  content: "\f129";
+}
+
+.fa-html5:before {
+  content: "\f13b";
+}
+
+.fa-css3:before {
+  content: "\f13c";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-apple:before {
+  content: "\f179";
+}
+
+.fa-google:before {
+  content: "\f1a0";
+}
+
+.fa-header:before {
+  content: "\f1dc";
+}
+
+.fa-facebook-official:before {
+  content: "\f230";
+}
+
+.a-map-marker-f:before {
+  content: "\f230";
+}
+
+.fa-500px:before {
+  content: "\f26e";
+}
+
+.fa-edge:before {
+  content: "\f282";
+}
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "\f2b4";
+}
+
+.fa-user-circle:before {
+  content: "\f2bd";
+}
+
+.fa-user-circle-o:before {
+  content: "\f2be";
+}
+
+.fa-user-o:before {
+  content: "\f2c0";
+}
+
+.fa-id-card:before {
+  content: "\f2c2";
+}
+
+.fa-id-card-o:before {
+  content: "\f2c3";
+}
+
+.fa-s15:before {
+  content: "\f2cd";
+}
+
+/*# sourceMappingURL=awesome.css.map */

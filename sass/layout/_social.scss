@@ -1,0 +1,51 @@
+.fa-instagram,
+.fa-facebook,
+.a-map-marker {
+    background: $color-primary;
+    background: $color-last;
+    // color: white;
+    color: #000;
+    border-radius: 50%;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    display: flex;
+    align-self: center;
+
+    @include respond(mini-desktop) {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        font-family: FontAwesome;
+        // content: "\f16d";
+    }
+}
+
+.fa-facebook {
+    color: #000;
+    // &::before {
+    //     content: "\f09a";
+    // }
+}
+
+.a-map-marker {
+    color: #000;
+
+    &::before {
+        color: #000;
+        content: "\f041";
+    }
+}
+
+.social {
+    display: flex;
+    gap: 0.5rem;
+}

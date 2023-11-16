@@ -1,0 +1,371 @@
+.lessons {
+    display: flex;
+    overflow: visible;
+    // overflow: hidden;
+    gap: 1rem;
+
+    @include respond(mini-desktop) {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    &-section {
+        overflow: visible;
+        margin-block: 2rem;
+        padding-inline: 5rem;
+        // overflow: visible;
+        // position: relative;
+        // display: flex;
+
+        // border: 1px solid green;
+
+
+        @include respond(mini-desktop) {
+            padding-inline: 1rem;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        overflow: hidden;
+        margin-block-end: 2rem;
+
+        @include respond(mini-desktop) {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+.lesson {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    overflow: visible;
+    background: $color-last;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s;
+
+    @include respond(mini-desktop) {
+        // bottom: -1rem;
+        // left: 1rem;
+    }
+
+    &>* {
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+
+    &.left {
+        left: -1rem;
+    }
+
+    // &#first {
+    //     &.show-on-scroll {
+    //         transform: translateY(0%);
+    //         transform: translateX(110%);
+    //         transition: all 0.5s 0.3s;
+
+    //         &.is-visible {
+    //             transform: translateX(0%);
+    //         }
+    //     }
+    // }
+
+    &#second {
+        background: $color-secondary;
+        left: 0.5rem;
+        top: -4rem;
+        width: 95%;
+
+        @include respond(mini-desktop) {
+            width: 100%;
+            left: -1rem;
+            top: 0;
+        }
+    }
+
+    &#third {
+        background: $color-primary;
+        left: -1rem;
+
+        @include respond(mini-desktop) {
+            left: 1rem;
+            top: -4rem;
+        }
+    }
+
+    &-container {
+        position: relative;
+        bottom: 0;
+        width: 33%;
+        min-height: 12rem;
+        overflow: visible;
+        cursor: pointer;
+
+        &:hover>#first {
+            transform: translate(-1rem, -1.5rem);
+        }
+
+        &:hover>#second {
+            transform: translate(-0.5rem, 1.3rem);
+            width: 100%;
+
+            @include respond(mini-desktop) {
+                transform: translate(1rem, -0.7rem);
+            }
+        }
+
+        &:hover>#third {
+            transform: translate(1rem, -1.5rem);
+
+            @include respond(mini-desktop) {
+                transform: translate(-1rem, 1.2rem);
+            }
+        }
+
+        @include respond(mini-desktop) {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        @include respond(mini-desktop) {
+            justify-content: center;
+        }
+
+        &-title {
+            font-size: 2rem;
+            cursor: pointer;
+
+            @include respond(mini-desktop) {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &-text {
+        text-align: center;
+        cursor: pointer;
+
+        &-short {
+            cursor: pointer;
+
+            @include respond(mini-desktop) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+    &-hidden {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba($color-black, 0.3);
+        height: 100vh;
+        width: 100vw;
+        // z-index: 5;
+        display: none;
+        // visibility: hidden;
+        opacity: 0;
+        transition: all 1s;
+
+
+        & * {
+            overflow: hidden;
+        }
+
+        &-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 2rem;
+            background: $color-white;
+            width: 80%;
+            height: 60%;
+            padding: 3rem;
+            border-radius: 1rem;
+            z-index: 20;
+            // text-align: center;
+            justify-content: space-evenly;
+
+            @include respond(mini-desktop) {
+                flex-direction: column;
+                // padding: 1.5rem;
+                padding: 2.5rem 1rem 1rem;
+                // height: 70%;
+                height: auto;
+                gap: 0.5rem;
+            }
+        }
+
+        &#first {
+            &-hidden {
+                z-index: 20;
+            }
+        }
+
+        &#second {
+            &-hidden {
+                z-index: 20;
+            }
+        }
+
+        &#third {
+            &-hidden {
+                z-index: 20;
+            }
+        }
+
+        &-cta {
+            display: flex;
+
+            @include respond(mini-desktop) {
+                &:hover>a {
+                    transform: translate(0.5rem, 0.5rem);
+                }
+            }
+        }
+
+        &-btn {
+            // @include global-btn ($color, $bg, $borderColor) {
+            border: 2px solid $color-black;
+            transition: all 0.3s;
+
+            &:hover {
+                border: 2px solid $color-black;
+
+            }
+        }
+
+        &-right {
+            width: 50%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+
+            @include respond(mini-desktop) {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            &-title {
+                text-align: center;
+                line-height: 1.2rem;
+
+                @include respond(mini-desktop) {
+                    line-height: 1.8rem;
+                }
+            }
+        }
+
+        &-text {
+            line-height: 1.2;
+
+            @include respond(mini-desktop) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            &-img {
+                border-radius: 1rem;
+                object-fit: cover;
+            }
+        }
+
+        &-cta {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            height: 4rem;
+            width: 12rem;
+            overflow: visible;
+
+            @include respond(mini-desktop) {
+                margin-top: 1rem;
+                width: 9rem;
+                height: 3rem;
+            }
+        }
+
+        &-btn {
+            top: -0.5rem;
+        }
+
+        &-exit {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            background-color: $color-primary;
+            color: $color-black;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 0 0 0 1rem;
+            cursor: pointer;
+            // transition: all 0.3s;
+            overflow: hidden;
+
+            @include respond(mini-desktop) {
+                width: 3.5rem;
+                height: 1.8rem;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+
+            &:hover {
+                background-color: $color-primary-dark;
+            }
+        }
+
+        // &-exit {
+        //     position: absolute;
+        //     right: 1rem;
+        //     top: 1rem;
+        //     z-index: 6;
+        //     color: white;
+        //     background: #000;
+        //     padding: 0.5rem;
+        //     width: 1.8rem;
+        //     height: 1.8rem;
+        //     font-size: 1rem;
+        //     line-height: 1rem;
+        //     border-radius: 50%;
+        //     cursor: pointer;
+        //     text-align: center;
+        //     overflow: hidden;
+        // }
+    }
+}
